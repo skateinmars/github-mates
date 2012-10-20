@@ -11,7 +11,6 @@ group :production do
   gem 'pg'
 end
 
-
 # Gems used only for assets and not required
 # in production environments by default.
 group :assets do
@@ -23,11 +22,12 @@ group :assets do
 
   gem 'uglifier', '>= 1.0.3'
 end
-
 gem 'jquery-rails'
 gem 'twitter-bootstrap-rails'
 
 gem 'rails_config'
+
+gem 'octokit'
 
 group :test, :development do
   gem 'rspec-rails'
@@ -35,7 +35,6 @@ group :test, :development do
   gem 'steak'
   gem 'capybara'
   gem 'vcr'
-  gem 'webmock'
 end
 
 gem 'thin'
