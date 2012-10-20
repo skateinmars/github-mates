@@ -5,8 +5,8 @@ class Repository
   include ActiveModel::Conversion
 
   attr_accessor :user, :repo
+  
   validates_presence_of :user, :repo
-
   validate :exists_on_github
 
   def initialize(params={})
@@ -16,6 +16,7 @@ class Repository
   end
 
   def persisted?
+    false
   end
 
   private

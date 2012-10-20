@@ -1,0 +1,13 @@
+<h1>Choose a repository</h1>
+
+<%= content_tag(:p, flash[:error], :class=>"alert alert-error") if flash[:error] %>
+
+<%= form_for @repository do |form| %>
+  <%= form.label :user %>
+  <%= form.text_field(:user, :class => 'input-medium') %>
+  
+  <%= form.label :repo %>
+  <%= form.text_field(:repo, :class => 'input-medium') %>
+
+  <%= form.submit "Submit", :class => 'btn' %>
+<% end %>
