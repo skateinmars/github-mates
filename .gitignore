@@ -16,6 +16,7 @@
 /tmp
 
 config/settings.local.yml
+config/settings/*.local.yml
 .rspec
 .rvmrc
 .env
