@@ -86,4 +86,188 @@ http_interactions:
       string: "{\"message\":\"Not Found\"}"
     http_version: 
   recorded_at: Sat, 20 Oct 2012 13:01:05 GMT
+- request: 
+    method: get
+    uri: https://api.github.com/repos/rails/acts_as_tree
+    body: 
+      encoding: US-ASCII
+      string: ""
+    headers: {}
+
+  response: 
+    status: 
+      code: 200
+      message: 
+    headers: 
+      server: 
+      - nginx
+      date: 
+      - Sat, 20 Oct 2012 18:04:18 GMT
+      content-type: 
+      - application/json; charset=utf-8
+      transfer-encoding: 
+      - chunked
+      connection: 
+      - close
+      status: 
+      - 200 OK
+      cache-control: 
+      - public, max-age=60, s-maxage=60
+      x-github-media-type: 
+      - github.beta
+      etag: 
+      - "\"2df32afd54efe8b497dc1838772c4852\""
+      x-content-type-options: 
+      - nosniff
+      last-modified: 
+      - Tue, 16 Oct 2012 13:59:12 GMT
+      x-ratelimit-limit: 
+      - "60"
+      x-ratelimit-remaining: 
+      - "50"
+      vary: 
+      - Accept
+    body: 
+      encoding: ASCII-8BIT
+      string: "{\"watchers\":273,\"ssh_url\":\"git@github.com:rails/acts_as_tree.git\",\"forks_count\":86,\"created_at\":\"2008-05-29T20:25:07Z\",\"url\":\"https://api.github.com/repos/rails/acts_as_tree\",\"html_url\":\"https://github.com/rails/acts_as_tree\",\"owner\":{\"url\":\"https://api.github.com/users/rails\",\"avatar_url\":\"https://secure.gravatar.com/avatar/30f39a09e233e8369dddf6feb4be0308?d=https://a248.e.akamai.net/assets.github.com%2Fimages%2Fgravatars%2Fgravatar-org-420.png\",\"_links\":{\"self\":{\"href\":\"https://api.github.com/users/rails\"}},\"id\":4223,\"gravatar_id\":\"30f39a09e233e8369dddf6feb4be0308\",\"login\":\"rails\"},\"network_count\":86,\"has_wiki\":true,\"description\":\"NOTICE: official repository moved to https://github.com/amerine/acts_as_tree\",\"master_branch\":\"master\",\"pushed_at\":\"2008-05-29T20:25:50Z\",\"has_issues\":true,\"forks\":86,\"clone_url\":\"https://github.com/rails/acts_as_tree.git\",\"organization\":{\"url\":\"https://api.github.com/users/rails\",\"avatar_url\":\"https://secure.gravatar.com/avatar/30f39a09e233e8369dddf6feb4be0308?d=https://a248.e.akamai.net/assets.github.com%2Fimages%2Fgravatars%2Fgravatar-org-420.png\",\"_links\":{\"self\":{\"href\":\"https://api.github.com/users/rails\"}},\"id\":4223,\"gravatar_id\":\"30f39a09e233e8369dddf6feb4be0308\",\"login\":\"rails\"},\"open_issues\":4,\"_links\":{\"self\":{\"href\":\"https://api.github.com/repos/rails/acts_as_tree\"}},\"updated_at\":\"2012-10-16T13:59:12Z\",\"git_url\":\"git://github.com/rails/acts_as_tree.git\",\"size\":0,\"fork\":false,\"svn_url\":\"https://github.com/rails/acts_as_tree\",\"watchers_count\":273,\"language\":\"Ruby\",\"mirror_url\":null,\"full_name\":\"rails/acts_as_tree\",\"name\":\"acts_as_tree\",\"has_downloads\":true,\"private\":false,\"id\":20550,\"homepage\":\"http://rubyonrails.org\",\"open_issues_count\":4}"
+    http_version: 
+  recorded_at: Sat, 20 Oct 2012 18:04:18 GMT
+- request: 
+    method: get
+    uri: https://api.github.com/repos/rails/acts_as_tree/contributors?anon=false
+    body: 
+      encoding: US-ASCII
+      string: ""
+    headers: {}
+
+  response: 
+    status: 
+      code: 200
+      message: 
+    headers: 
+      server: 
+      - nginx
+      date: 
+      - Sat, 20 Oct 2012 18:04:19 GMT
+      content-type: 
+      - application/json; charset=utf-8
+      transfer-encoding: 
+      - chunked
+      connection: 
+      - close
+      status: 
+      - 200 OK
+      etag: 
+      - "\"2df32afd54efe8b497dc1838772c4852\""
+      x-github-media-type: 
+      - github.beta
+      x-ratelimit-remaining: 
+      - "49"
+      x-ratelimit-limit: 
+      - "60"
+      x-content-type-options: 
+      - nosniff
+      vary: 
+      - Accept
+      last-modified: 
+      - Tue, 16 Oct 2012 13:59:12 GMT
+      cache-control: 
+      - public, s-maxage=60, max-age=60
+    body: 
+      encoding: ASCII-8BIT
+      string: "[{\"url\":\"https://api.github.com/users/jeremy\",\"_links\":{\"self\":{\"href\":\"https://api.github.com/users/jeremy\"}},\"avatar_url\":\"https://secure.gravatar.com/avatar/24d2f8804e6bb4b7ea6bd11e0a586470?d=https://a248.e.akamai.net/assets.github.com%2Fimages%2Fgravatars%2Fgravatar-user-420.png\",\"id\":199,\"contributions\":3,\"gravatar_id\":\"24d2f8804e6bb4b7ea6bd11e0a586470\",\"login\":\"jeremy\"},{\"url\":\"https://api.github.com/users/dhh\",\"_links\":{\"self\":{\"href\":\"https://api.github.com/users/dhh\"}},\"avatar_url\":\"https://secure.gravatar.com/avatar/ed9635566b34ade32274f510f0f9a6d2?d=https://a248.e.akamai.net/assets.github.com%2Fimages%2Fgravatars%2Fgravatar-user-420.png\",\"id\":2741,\"contributions\":1,\"gravatar_id\":\"ed9635566b34ade32274f510f0f9a6d2\",\"login\":\"dhh\"}]"
+    http_version: 
+  recorded_at: Sat, 20 Oct 2012 18:04:18 GMT
+- request: 
+    method: get
+    uri: https://api.github.com/users/jeremy
+    body: 
+      encoding: US-ASCII
+      string: ""
+    headers: {}
+
+  response: 
+    status: 
+      code: 200
+      message: 
+    headers: 
+      server: 
+      - nginx
+      date: 
+      - Sat, 20 Oct 2012 18:04:20 GMT
+      content-type: 
+      - application/json; charset=utf-8
+      transfer-encoding: 
+      - chunked
+      connection: 
+      - close
+      status: 
+      - 200 OK
+      etag: 
+      - "\"4c715bf682c4b0f12af77852c91b3a19\""
+      x-content-type-options: 
+      - nosniff
+      last-modified: 
+      - Tue, 16 Oct 2012 01:39:38 GMT
+      x-ratelimit-limit: 
+      - "60"
+      x-github-media-type: 
+      - github.beta
+      cache-control: 
+      - public, s-maxage=60, max-age=60
+      vary: 
+      - Accept
+      x-ratelimit-remaining: 
+      - "48"
+    body: 
+      encoding: ASCII-8BIT
+      string: "{\"type\":\"User\",\"company\":\"37signals\",\"html_url\":\"https://github.com/jeremy\",\"created_at\":\"2008-02-13T03:02:19Z\",\"bio\":null,\"url\":\"https://api.github.com/users/jeremy\",\"email\":\"jeremy@bitsweat.net\",\"public_repos\":49,\"following\":123,\"_links\":{\"self\":{\"href\":\"https://api.github.com/users/jeremy\"}},\"public_gists\":29,\"blog\":\"http://bitsweat.net\",\"location\":\"Tempe, AZ\",\"name\":\"Jeremy Kemper\",\"avatar_url\":\"https://secure.gravatar.com/avatar/24d2f8804e6bb4b7ea6bd11e0a586470?d=https://a248.e.akamai.net/assets.github.com%2Fimages%2Fgravatars%2Fgravatar-user-420.png\",\"id\":199,\"followers\":398,\"hireable\":false,\"gravatar_id\":\"24d2f8804e6bb4b7ea6bd11e0a586470\",\"login\":\"jeremy\"}"
+    http_version: 
+  recorded_at: Sat, 20 Oct 2012 18:04:19 GMT
+- request: 
+    method: get
+    uri: https://api.github.com/users/dhh
+    body: 
+      encoding: US-ASCII
+      string: ""
+    headers: {}
+
+  response: 
+    status: 
+      code: 200
+      message: 
+    headers: 
+      server: 
+      - nginx
+      date: 
+      - Sat, 20 Oct 2012 18:04:20 GMT
+      content-type: 
+      - application/json; charset=utf-8
+      transfer-encoding: 
+      - chunked
+      connection: 
+      - close
+      status: 
+      - 200 OK
+      x-github-media-type: 
+      - github.beta
+      etag: 
+      - "\"fe4ff951e886e75310d070f23b4b3d81\""
+      x-ratelimit-limit: 
+      - "60"
+      last-modified: 
+      - Tue, 16 Oct 2012 01:41:02 GMT
+      x-content-type-options: 
+      - nosniff
+      x-ratelimit-remaining: 
+      - "47"
+      cache-control: 
+      - public, max-age=60, s-maxage=60
+      vary: 
+      - Accept
+    body: 
+      encoding: ASCII-8BIT
+      string: "{\"type\":\"User\",\"company\":\"37signals\",\"created_at\":\"2008-03-10T17:53:51Z\",\"bio\":null,\"url\":\"https://api.github.com/users/dhh\",\"blog\":\"http://www.loudthinking.com\",\"email\":\"david@loudthinking.com\",\"avatar_url\":\"https://secure.gravatar.com/avatar/ed9635566b34ade32274f510f0f9a6d2?d=https://a248.e.akamai.net/assets.github.com%2Fimages%2Fgravatars%2Fgravatar-user-420.png\",\"_links\":{\"self\":{\"href\":\"https://api.github.com/users/dhh\"}},\"public_gists\":26,\"following\":0,\"location\":\"Chicago, USA\",\"name\":\"David Heinemeier Hansson\",\"public_repos\":13,\"html_url\":\"https://github.com/dhh\",\"id\":2741,\"followers\":3441,\"hireable\":false,\"gravatar_id\":\"ed9635566b34ade32274f510f0f9a6d2\",\"login\":\"dhh\"}"
+    http_version: 
+  recorded_at: Sat, 20 Oct 2012 18:04:20 GMT
 recorded_with: VCR 2.2.5

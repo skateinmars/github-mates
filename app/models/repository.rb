@@ -15,11 +15,23 @@ class Repository
     end
   end
 
+  def commiters
+    GithubApi.repository_commiters_details(user, repo)
+  end
+
   def persisted?
     false
   end
 
+  def to_s
+    "#{user}/#{repo}"
+  end
+
   private
+
+  def github_repository
+    @github_repository ||= (GithubApi.repository(user, repo) rescue {})
+  end
 
   def exists_on_github
     if user.present? && repo.present?

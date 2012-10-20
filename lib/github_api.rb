@@ -3,7 +3,7 @@ require 'octokit'
 class GithubApi
   class << self
     def repository(username, repository)
-      Octokit.repo(:username => username, :repo => repository)
+      github_client.repo(:username => username, :repo => repository)
     end
 
     def repository_exists?(username, repository)
@@ -15,8 +15,21 @@ class GithubApi
       end
     end
 
+    def repository_commiters_details(username, repository)
+      commiters = github_client.contributors(:username => username, :repo => repository)
+      commiters.map {|user| self.user(user.login) }
+    end
+
     def user(username)
-      Octokit.user(username)
+      github_client.user(username)
+    end
+
+    def github_client
+      if Settings.github
+        Octokit::Client.new(:login => Settings.github.login, :password => Settings.github.password)
+      else
+        Octokit
+      end
     end
   end
 end

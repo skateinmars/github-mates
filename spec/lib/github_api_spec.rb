@@ -26,6 +26,18 @@ describe GithubApi do
     end
   end
 
+  describe ".repository_commiters_details" do
+    it "returns the repository commiters list" do
+      commiters = GithubApi.repository_commiters_details('skateinmars', 'has_url')
+      commiters.should be_a(Array)
+      commiters.first.login.should eql("skateinmars")
+    end
+
+    it "raises an error when the repository does not exist" do
+      lambda {GithubApi.repository_commiters_details('rails', 'django')}.should raise_error
+    end
+  end
+
   describe ".user" do
     it "returns the user attributes" do
       user = GithubApi.user('rails')
