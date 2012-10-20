@@ -1,0 +1,26 @@
+<h1>Viewing <%= @repository.to_s %> commiters</h1>
+
+<div id="commiters">
+<% @repository.commiters.each do |user| -%>
+  <div class="commiter">
+    <h3 class="user_login"><%= user.login %></h3>
+    <div class="user_infos">
+      <h4><%= image_tag user.avatar_url, :alt => user.login, :width => 50, :height => 50 %> <%= user.name %></h4>
+      <p>
+        <% if user.location.present? %>
+          <span class="user_location"><%= user.location %></span><br/>
+        <% end -%>
+        <% if user.company.present? %>
+          works at <%= user.company %><br/>
+        <% end -%>
+        <% if user.email.present? %>
+          <%= mail_to user.email %><br/>
+        <% end -%>
+        <% if user.blog.present? %>
+          <%= link_to user.blog, user.blog %>
+        <% end -%>
+      </p>
+    </div>
+  </div>
+<% end -%>
+</div>

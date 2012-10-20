@@ -32,4 +32,13 @@ describe RepositoriesController do
     it { should set_the_flash[:error] }
   end
 
+  describe "GET 'show'" do
+    before do 
+      get 'show', {:user => 'user', :repo => 'name'}
+    end
+
+    it { should respond_with(:success) }
+    it { should render_template(:show) }
+    it { should render_with_layout(:application) }
+  end
 end

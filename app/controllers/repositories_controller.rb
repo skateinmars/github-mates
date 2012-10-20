@@ -14,5 +14,6 @@ class RepositoriesController < ApplicationController
   end
 
   def show
+    @repository = Repository.new(:user => params[:user], :repo => params[:repo])
   end
 end

@@ -1,0 +1,279 @@
+--- 
+http_interactions: 
+- request: 
+    method: get
+    uri: https://api.github.com/repos/rails/acts_as_list/contributors?anon=false
+    body: 
+      encoding: US-ASCII
+      string: ""
+    headers: {}
+
+  response: 
+    status: 
+      code: 200
+      message: 
+    headers: 
+      server: 
+      - nginx
+      date: 
+      - Sat, 20 Oct 2012 18:16:22 GMT
+      content-type: 
+      - application/json; charset=utf-8
+      transfer-encoding: 
+      - chunked
+      connection: 
+      - close
+      status: 
+      - 200 OK
+      x-ratelimit-limit: 
+      - "60"
+      cache-control: 
+      - public, s-maxage=60, max-age=60
+      x-content-type-options: 
+      - nosniff
+      vary: 
+      - Accept
+      x-github-media-type: 
+      - github.beta
+      etag: 
+      - "\"3080a7f1eb749eaf0fee223f8985196d\""
+      last-modified: 
+      - Mon, 08 Oct 2012 21:43:04 GMT
+      x-ratelimit-remaining: 
+      - "46"
+    body: 
+      encoding: ASCII-8BIT
+      string: "[{\"_links\":{\"self\":{\"href\":\"https://api.github.com/users/jeremy\"}},\"url\":\"https://api.github.com/users/jeremy\",\"avatar_url\":\"https://secure.gravatar.com/avatar/24d2f8804e6bb4b7ea6bd11e0a586470?d=https://a248.e.akamai.net/assets.github.com%2Fimages%2Fgravatars%2Fgravatar-user-420.png\",\"id\":199,\"contributions\":4,\"gravatar_id\":\"24d2f8804e6bb4b7ea6bd11e0a586470\",\"login\":\"jeremy\"},{\"_links\":{\"self\":{\"href\":\"https://api.github.com/users/NZKoz\"}},\"url\":\"https://api.github.com/users/NZKoz\",\"avatar_url\":\"https://secure.gravatar.com/avatar/efa76b164a7de4a5730e4fa397cc4425?d=https://a248.e.akamai.net/assets.github.com%2Fimages%2Fgravatars%2Fgravatar-user-420.png\",\"id\":197,\"contributions\":3,\"gravatar_id\":\"efa76b164a7de4a5730e4fa397cc4425\",\"login\":\"NZKoz\"},{\"_links\":{\"self\":{\"href\":\"https://api.github.com/users/pixeltrix\"}},\"url\":\"https://api.github.com/users/pixeltrix\",\"avatar_url\":\"https://secure.gravatar.com/avatar/b14001f2b40640dd6cb63f0e8f1f4869?d=https://a248.e.akamai.net/assets.github.com%2Fimages%2Fgravatars%2Fgravatar-user-420.png\",\"id\":6321,\"contributions\":1,\"gravatar_id\":\"b14001f2b40640dd6cb63f0e8f1f4869\",\"login\":\"pixeltrix\"},{\"_links\":{\"self\":{\"href\":\"https://api.github.com/users/dhh\"}},\"url\":\"https://api.github.com/users/dhh\",\"avatar_url\":\"https://secure.gravatar.com/avatar/ed9635566b34ade32274f510f0f9a6d2?d=https://a248.e.akamai.net/assets.github.com%2Fimages%2Fgravatars%2Fgravatar-user-420.png\",\"id\":2741,\"contributions\":1,\"gravatar_id\":\"ed9635566b34ade32274f510f0f9a6d2\",\"login\":\"dhh\"},{\"_links\":{\"self\":{\"href\":\"https://api.github.com/users/mkdynamic\"}},\"url\":\"https://api.github.com/users/mkdynamic\",\"avatar_url\":\"https://secure.gravatar.com/avatar/e7d425eb75982fddc0438b8420c93189?d=https://a248.e.akamai.net/assets.github.com%2Fimages%2Fgravatars%2Fgravatar-user-420.png\",\"id\":4312,\"contributions\":1,\"gravatar_id\":\"e7d425eb75982fddc0438b8420c93189\",\"login\":\"mkdynamic\"}]"
+    http_version: 
+  recorded_at: Sat, 20 Oct 2012 18:16:21 GMT
+- request: 
+    method: get
+    uri: https://api.github.com/users/jeremy
+    body: 
+      encoding: US-ASCII
+      string: ""
+    headers: {}
+
+  response: 
+    status: 
+      code: 200
+      message: 
+    headers: 
+      server: 
+      - nginx
+      date: 
+      - Sat, 20 Oct 2012 18:16:22 GMT
+      content-type: 
+      - application/json; charset=utf-8
+      transfer-encoding: 
+      - chunked
+      connection: 
+      - close
+      status: 
+      - 200 OK
+      x-github-media-type: 
+      - github.beta
+      etag: 
+      - "\"4c715bf682c4b0f12af77852c91b3a19\""
+      x-ratelimit-remaining: 
+      - "45"
+      x-content-type-options: 
+      - nosniff
+      cache-control: 
+      - public, s-maxage=60, max-age=60
+      x-ratelimit-limit: 
+      - "60"
+      vary: 
+      - Accept
+      last-modified: 
+      - Tue, 16 Oct 2012 01:39:38 GMT
+    body: 
+      encoding: ASCII-8BIT
+      string: "{\"type\":\"User\",\"email\":\"jeremy@bitsweat.net\",\"hireable\":false,\"url\":\"https://api.github.com/users/jeremy\",\"followers\":398,\"gravatar_id\":\"24d2f8804e6bb4b7ea6bd11e0a586470\",\"avatar_url\":\"https://secure.gravatar.com/avatar/24d2f8804e6bb4b7ea6bd11e0a586470?d=https://a248.e.akamai.net/assets.github.com%2Fimages%2Fgravatars%2Fgravatar-user-420.png\",\"company\":\"37signals\",\"bio\":null,\"public_repos\":49,\"html_url\":\"https://github.com/jeremy\",\"login\":\"jeremy\",\"created_at\":\"2008-02-13T03:02:19Z\",\"name\":\"Jeremy Kemper\",\"_links\":{\"self\":{\"href\":\"https://api.github.com/users/jeremy\"}},\"public_gists\":29,\"following\":123,\"id\":199,\"blog\":\"http://bitsweat.net\",\"location\":\"Tempe, AZ\"}"
+    http_version: 
+  recorded_at: Sat, 20 Oct 2012 18:16:22 GMT
+- request: 
+    method: get
+    uri: https://api.github.com/users/NZKoz
+    body: 
+      encoding: US-ASCII
+      string: ""
+    headers: {}
+
+  response: 
+    status: 
+      code: 200
+      message: 
+    headers: 
+      server: 
+      - nginx
+      date: 
+      - Sat, 20 Oct 2012 18:16:23 GMT
+      content-type: 
+      - application/json; charset=utf-8
+      transfer-encoding: 
+      - chunked
+      connection: 
+      - close
+      status: 
+      - 200 OK
+      x-ratelimit-limit: 
+      - "60"
+      cache-control: 
+      - public, s-maxage=60, max-age=60
+      x-content-type-options: 
+      - nosniff
+      vary: 
+      - Accept
+      x-github-media-type: 
+      - github.beta
+      etag: 
+      - "\"4c715bf682c4b0f12af77852c91b3a19\""
+      last-modified: 
+      - Tue, 16 Oct 2012 01:39:38 GMT
+      x-ratelimit-remaining: 
+      - "44"
+    body: 
+      encoding: ASCII-8BIT
+      string: "{\"type\":\"User\",\"company\":\"Southgate Labs\",\"_links\":{\"self\":{\"href\":\"https://api.github.com/users/NZKoz\"}},\"created_at\":\"2008-02-13T02:35:58Z\",\"url\":\"https://api.github.com/users/NZKoz\",\"email\":\"michael@koziarski.com\",\"hireable\":false,\"avatar_url\":\"https://secure.gravatar.com/avatar/efa76b164a7de4a5730e4fa397cc4425?d=https://a248.e.akamai.net/assets.github.com%2Fimages%2Fgravatars%2Fgravatar-user-420.png\",\"following\":1,\"bio\":null,\"location\":\"Wellington, New Zealand\",\"public_repos\":26,\"public_gists\":56,\"name\":\"Michael Koziarski\",\"html_url\":\"https://github.com/NZKoz\",\"blog\":\"http://www.koziarski.net/\",\"id\":197,\"followers\":212,\"gravatar_id\":\"efa76b164a7de4a5730e4fa397cc4425\",\"login\":\"NZKoz\"}"
+    http_version: 
+  recorded_at: Sat, 20 Oct 2012 18:16:23 GMT
+- request: 
+    method: get
+    uri: https://api.github.com/users/pixeltrix
+    body: 
+      encoding: US-ASCII
+      string: ""
+    headers: {}
+
+  response: 
+    status: 
+      code: 200
+      message: 
+    headers: 
+      server: 
+      - nginx
+      date: 
+      - Sat, 20 Oct 2012 18:16:24 GMT
+      content-type: 
+      - application/json; charset=utf-8
+      transfer-encoding: 
+      - chunked
+      connection: 
+      - close
+      status: 
+      - 200 OK
+      x-ratelimit-limit: 
+      - "60"
+      cache-control: 
+      - public, s-maxage=60, max-age=60
+      x-content-type-options: 
+      - nosniff
+      vary: 
+      - Accept
+      x-github-media-type: 
+      - github.beta
+      etag: 
+      - "\"82d9da70e2240f4fd6f691e792242036\""
+      last-modified: 
+      - Tue, 16 Oct 2012 01:43:02 GMT
+      x-ratelimit-remaining: 
+      - "43"
+    body: 
+      encoding: ASCII-8BIT
+      string: "{\"type\":\"User\",\"company\":\"Pixeltrix\",\"_links\":{\"self\":{\"href\":\"https://api.github.com/users/pixeltrix\"}},\"created_at\":\"2008-04-10T21:36:37Z\",\"url\":\"https://api.github.com/users/pixeltrix\",\"email\":\"andyw@pixeltrix.co.uk\",\"hireable\":false,\"avatar_url\":\"https://secure.gravatar.com/avatar/b14001f2b40640dd6cb63f0e8f1f4869?d=https://a248.e.akamai.net/assets.github.com%2Fimages%2Fgravatars%2Fgravatar-user-420.png\",\"following\":0,\"bio\":null,\"location\":\"Coventry, UK\",\"public_repos\":49,\"public_gists\":27,\"name\":\"Andrew White\",\"html_url\":\"https://github.com/pixeltrix\",\"blog\":\"www.pixeltrix.co.uk\",\"id\":6321,\"followers\":32,\"gravatar_id\":\"b14001f2b40640dd6cb63f0e8f1f4869\",\"login\":\"pixeltrix\"}"
+    http_version: 
+  recorded_at: Sat, 20 Oct 2012 18:16:23 GMT
+- request: 
+    method: get
+    uri: https://api.github.com/users/dhh
+    body: 
+      encoding: US-ASCII
+      string: ""
+    headers: {}
+
+  response: 
+    status: 
+      code: 200
+      message: 
+    headers: 
+      server: 
+      - nginx
+      date: 
+      - Sat, 20 Oct 2012 18:16:24 GMT
+      content-type: 
+      - application/json; charset=utf-8
+      transfer-encoding: 
+      - chunked
+      connection: 
+      - close
+      status: 
+      - 200 OK
+      etag: 
+      - "\"fe4ff951e886e75310d070f23b4b3d81\""
+      x-content-type-options: 
+      - nosniff
+      last-modified: 
+      - Tue, 16 Oct 2012 01:41:02 GMT
+      x-ratelimit-limit: 
+      - "60"
+      x-github-media-type: 
+      - github.beta
+      cache-control: 
+      - public, s-maxage=60, max-age=60
+      vary: 
+      - Accept
+      x-ratelimit-remaining: 
+      - "42"
+    body: 
+      encoding: ASCII-8BIT
+      string: "{\"type\":\"User\",\"company\":\"37signals\",\"html_url\":\"https://github.com/dhh\",\"created_at\":\"2008-03-10T17:53:51Z\",\"bio\":null,\"url\":\"https://api.github.com/users/dhh\",\"email\":\"david@loudthinking.com\",\"public_repos\":13,\"following\":0,\"_links\":{\"self\":{\"href\":\"https://api.github.com/users/dhh\"}},\"public_gists\":26,\"blog\":\"http://www.loudthinking.com\",\"location\":\"Chicago, USA\",\"name\":\"David Heinemeier Hansson\",\"avatar_url\":\"https://secure.gravatar.com/avatar/ed9635566b34ade32274f510f0f9a6d2?d=https://a248.e.akamai.net/assets.github.com%2Fimages%2Fgravatars%2Fgravatar-user-420.png\",\"id\":2741,\"followers\":3441,\"hireable\":false,\"gravatar_id\":\"ed9635566b34ade32274f510f0f9a6d2\",\"login\":\"dhh\"}"
+    http_version: 
+  recorded_at: Sat, 20 Oct 2012 18:16:24 GMT
+- request: 
+    method: get
+    uri: https://api.github.com/users/mkdynamic
+    body: 
+      encoding: US-ASCII
+      string: ""
+    headers: {}
+
+  response: 
+    status: 
+      code: 200
+      message: 
+    headers: 
+      server: 
+      - nginx
+      date: 
+      - Sat, 20 Oct 2012 18:16:25 GMT
+      content-type: 
+      - application/json; charset=utf-8
+      transfer-encoding: 
+      - chunked
+      connection: 
+      - close
+      status: 
+      - 200 OK
+      x-github-media-type: 
+      - github.beta
+      etag: 
+      - "\"d5f33a53f2e51bd65d8d12e7fc45d3a6\""
+      x-ratelimit-remaining: 
+      - "41"
+      x-content-type-options: 
+      - nosniff
+      cache-control: 
+      - public, s-maxage=60, max-age=60
+      x-ratelimit-limit: 
+      - "60"
+      vary: 
+      - Accept
+      last-modified: 
+      - Thu, 18 Oct 2012 18:46:00 GMT
+    body: 
+      encoding: ASCII-8BIT
+      string: "{\"type\":\"User\",\"email\":\"mark@madeofcode.com\",\"hireable\":false,\"url\":\"https://api.github.com/users/mkdynamic\",\"followers\":49,\"gravatar_id\":\"e7d425eb75982fddc0438b8420c93189\",\"avatar_url\":\"https://secure.gravatar.com/avatar/e7d425eb75982fddc0438b8420c93189?d=https://a248.e.akamai.net/assets.github.com%2Fimages%2Fgravatars%2Fgravatar-user-420.png\",\"company\":\"Mixbook\",\"bio\":\"\",\"public_repos\":65,\"html_url\":\"https://github.com/mkdynamic\",\"login\":\"mkdynamic\",\"created_at\":\"2008-04-02T19:07:35Z\",\"name\":\"Mark Dodwell\",\"_links\":{\"self\":{\"href\":\"https://api.github.com/users/mkdynamic\"}},\"public_gists\":26,\"following\":13,\"id\":4312,\"blog\":\"madeofcode.com\",\"location\":\"Palo Alto, CA\"}"
+    http_version: 
+  recorded_at: Sat, 20 Oct 2012 18:16:25 GMT
+recorded_with: VCR 2.2.5
