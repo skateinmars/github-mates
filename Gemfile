@@ -32,6 +32,10 @@ gem 'rails_config'
 group :test, :development do
   gem 'rspec-rails'
   gem 'shoulda-matchers'
+  gem 'steak'
+  gem 'capybara'
+  gem 'vcr'
+  gem 'webmock'
 end
 
 gem 'thin'
