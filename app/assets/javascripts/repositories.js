@@ -32,17 +32,22 @@ function displayUserOnMap(element) {
 
       if(((map.center.lat() == 0) && ($('.commiter').has('.user_location').first().find('.user_login').html() == user_login)) || user.element.hasClass('main_commiter')) {
         map.setCenter(user_position);
+        markerOptions = {
+          icon: $('p.main_commiter_infos img').attr('src')
+        };
+      } else {
+        markerOptions = {}
       }
 
       var infowindow = new google.maps.InfoWindow({
         content: user.element.html(),
         maxWidth: 500
       });
-      var marker = new google.maps.Marker({
+      var marker = new google.maps.Marker($.extend({
         map: map,
         position: user_position,
         title: user_login
-      });
+      }, markerOptions));
 
       google.maps.event.addListener(marker, 'click', function() {
         close_infowindows();

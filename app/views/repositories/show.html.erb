@@ -3,6 +3,7 @@
 <div id="commiters_map"></div>
 
 <div id="commiters">
+  <p class="main_commiter_infos"><%= image_tag "http://www.googlemapsmarkers.com/v1/2a2d9a/", :alt => "Google marps marker" %>: Repository main commiter</p>
   <h2>Lost commiters</h2>
 
   <% @repository.commiters.each do |user| -%>
