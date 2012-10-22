@@ -25,8 +25,10 @@ class GithubApi
     end
 
     def github_client
-      if Settings.github
+      if Settings.github && Settings.github.login
         Octokit::Client.new(:login => Settings.github.login, :password => Settings.github.password)
+      elsif Settings.github && Settings.github.client_id
+        Octokit::Client.new(:client_id => Settings.github.client_id, :client_secret => Settings.github.client_secret)
       else
         Octokit
       end
