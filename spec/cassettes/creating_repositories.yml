@@ -16,7 +16,7 @@ http_interactions:
       server: 
       - nginx
       date: 
-      - Sat, 20 Oct 2012 13:24:26 GMT
+      - Mon, 22 Oct 2012 08:51:32 GMT
       content-type: 
       - application/json; charset=utf-8
       transfer-encoding: 
@@ -28,21 +28,21 @@ http_interactions:
       x-content-type-options: 
       - nosniff
       x-ratelimit-remaining: 
-      - "38"
-      x-ratelimit-limit: 
-      - "60"
+      - "53"
       x-github-media-type: 
       - github.beta
+      x-ratelimit-limit: 
+      - "60"
       cache-control: 
       - ""
     body: 
       encoding: ASCII-8BIT
       string: "{\"message\":\"Not Found\"}"
     http_version: 
-  recorded_at: Sat, 20 Oct 2012 13:24:26 GMT
+  recorded_at: Mon, 22 Oct 2012 08:51:32 GMT
 - request: 
     method: get
-    uri: https://api.github.com/repos/rails/rails
+    uri: https://api.github.com/repos/skateinmars/has_url
     body: 
       encoding: US-ASCII
       string: ""
@@ -56,7 +56,7 @@ http_interactions:
       server: 
       - nginx
       date: 
-      - Sat, 20 Oct 2012 13:24:27 GMT
+      - Mon, 22 Oct 2012 08:51:33 GMT
       content-type: 
       - application/json; charset=utf-8
       transfer-encoding: 
@@ -65,25 +65,117 @@ http_interactions:
       - close
       status: 
       - 200 OK
-      x-ratelimit-remaining: 
-      - "37"
-      etag: 
-      - "\"8ec4536a3a013d13b8bab215f16bb811\""
+      x-github-media-type: 
+      - github.beta
       x-content-type-options: 
       - nosniff
-      cache-control: 
-      - public, s-maxage=60, max-age=60
+      etag: 
+      - "\"a6b92d120f7665c49e0803fdf8a0ffd2\""
+      last-modified: 
+      - Thu, 13 Sep 2012 23:13:23 GMT
       x-ratelimit-limit: 
       - "60"
       vary: 
       - Accept
-      x-github-media-type: 
-      - github.beta
-      last-modified: 
-      - Sat, 20 Oct 2012 12:56:33 GMT
+      x-ratelimit-remaining: 
+      - "52"
+      cache-control: 
+      - public, s-maxage=60, max-age=60
     body: 
       encoding: ASCII-8BIT
-      string: "{\"watchers\":16302,\"ssh_url\":\"git@github.com:rails/rails.git\",\"created_at\":\"2008-04-11T02:19:47Z\",\"has_issues\":true,\"url\":\"https://api.github.com/repos/rails/rails\",\"owner\":{\"url\":\"https://api.github.com/users/rails\",\"_links\":{\"self\":{\"href\":\"https://api.github.com/users/rails\"}},\"id\":4223,\"gravatar_id\":\"30f39a09e233e8369dddf6feb4be0308\",\"avatar_url\":\"https://secure.gravatar.com/avatar/30f39a09e233e8369dddf6feb4be0308?d=https://a248.e.akamai.net/assets.github.com%2Fimages%2Fgravatars%2Fgravatar-org-420.png\",\"login\":\"rails\"},\"description\":\"Ruby on Rails\",\"pushed_at\":\"2012-10-20T01:27:45Z\",\"has_wiki\":false,\"forks\":4107,\"git_url\":\"git://github.com/rails/rails.git\",\"clone_url\":\"https://github.com/rails/rails.git\",\"forks_count\":4107,\"organization\":{\"url\":\"https://api.github.com/users/rails\",\"_links\":{\"self\":{\"href\":\"https://api.github.com/users/rails\"}},\"id\":4223,\"gravatar_id\":\"30f39a09e233e8369dddf6feb4be0308\",\"avatar_url\":\"https://secure.gravatar.com/avatar/30f39a09e233e8369dddf6feb4be0308?d=https://a248.e.akamai.net/assets.github.com%2Fimages%2Fgravatars%2Fgravatar-org-420.png\",\"login\":\"rails\"},\"network_count\":4107,\"open_issues\":396,\"updated_at\":\"2012-10-20T12:56:33Z\",\"watchers_count\":16302,\"svn_url\":\"https://github.com/rails/rails\",\"size\":88252,\"mirror_url\":null,\"fork\":false,\"language\":\"Ruby\",\"open_issues_count\":396,\"full_name\":\"rails/rails\",\"name\":\"rails\",\"_links\":{\"self\":{\"href\":\"https://api.github.com/repos/rails/rails\"}},\"html_url\":\"https://github.com/rails/rails\",\"private\":false,\"id\":8514,\"master_branch\":\"master\",\"homepage\":\"http://rubyonrails.org\",\"has_downloads\":true}"
+      string: "{\"watchers\":1,\"ssh_url\":\"git@github.com:skateinmars/has_url.git\",\"forks_count\":0,\"created_at\":\"2012-06-19T14:30:12Z\",\"url\":\"https://api.github.com/repos/skateinmars/has_url\",\"html_url\":\"https://github.com/skateinmars/has_url\",\"owner\":{\"url\":\"https://api.github.com/users/skateinmars\",\"avatar_url\":\"https://secure.gravatar.com/avatar/53d6845ee2656b1ef581523da50834b8?d=https://a248.e.akamai.net/assets.github.com%2Fimages%2Fgravatars%2Fgravatar-user-420.png\",\"_links\":{\"self\":{\"href\":\"https://api.github.com/users/skateinmars\"}},\"id\":14015,\"gravatar_id\":\"53d6845ee2656b1ef581523da50834b8\",\"login\":\"skateinmars\"},\"network_count\":0,\"has_wiki\":true,\"description\":\"Validation on URL attributes for ActiveRecord models.\",\"master_branch\":\"master\",\"pushed_at\":\"2012-06-19T16:10:02Z\",\"has_issues\":true,\"_links\":{\"self\":{\"href\":\"https://api.github.com/repos/skateinmars/has_url\"}},\"forks\":0,\"git_url\":\"git://github.com/skateinmars/has_url.git\",\"clone_url\":\"https://github.com/skateinmars/has_url.git\",\"open_issues\":0,\"updated_at\":\"2012-09-13T23:13:23Z\",\"watchers_count\":1,\"size\":96,\"fork\":false,\"svn_url\":\"https://github.com/skateinmars/has_url\",\"language\":\"Ruby\",\"mirror_url\":null,\"open_issues_count\":0,\"full_name\":\"skateinmars/has_url\",\"name\":\"has_url\",\"has_downloads\":true,\"private\":false,\"id\":4714753,\"homepage\":null}"
     http_version: 
-  recorded_at: Sat, 20 Oct 2012 13:24:27 GMT
+  recorded_at: Mon, 22 Oct 2012 08:51:33 GMT
+- request: 
+    method: get
+    uri: https://api.github.com/repos/skateinmars/has_url/contributors?anon=false
+    body: 
+      encoding: US-ASCII
+      string: ""
+    headers: {}
+
+  response: 
+    status: 
+      code: 200
+      message: 
+    headers: 
+      server: 
+      - nginx
+      date: 
+      - Mon, 22 Oct 2012 08:51:33 GMT
+      content-type: 
+      - application/json; charset=utf-8
+      transfer-encoding: 
+      - chunked
+      connection: 
+      - close
+      status: 
+      - 200 OK
+      vary: 
+      - Accept
+      last-modified: 
+      - Thu, 13 Sep 2012 23:13:23 GMT
+      cache-control: 
+      - public, max-age=60, s-maxage=60
+      x-content-type-options: 
+      - nosniff
+      etag: 
+      - "\"a6b92d120f7665c49e0803fdf8a0ffd2\""
+      x-ratelimit-remaining: 
+      - "51"
+      x-github-media-type: 
+      - github.beta
+      x-ratelimit-limit: 
+      - "60"
+    body: 
+      encoding: ASCII-8BIT
+      string: "[{\"url\":\"https://api.github.com/users/skateinmars\",\"_links\":{\"self\":{\"href\":\"https://api.github.com/users/skateinmars\"}},\"avatar_url\":\"https://secure.gravatar.com/avatar/53d6845ee2656b1ef581523da50834b8?d=https://a248.e.akamai.net/assets.github.com%2Fimages%2Fgravatars%2Fgravatar-user-420.png\",\"id\":14015,\"contributions\":7,\"gravatar_id\":\"53d6845ee2656b1ef581523da50834b8\",\"login\":\"skateinmars\"}]"
+    http_version: 
+  recorded_at: Mon, 22 Oct 2012 08:51:34 GMT
+- request: 
+    method: get
+    uri: https://api.github.com/users/skateinmars
+    body: 
+      encoding: US-ASCII
+      string: ""
+    headers: {}
+
+  response: 
+    status: 
+      code: 200
+      message: 
+    headers: 
+      server: 
+      - nginx
+      date: 
+      - Mon, 22 Oct 2012 08:51:34 GMT
+      content-type: 
+      - application/json; charset=utf-8
+      transfer-encoding: 
+      - chunked
+      connection: 
+      - close
+      status: 
+      - 200 OK
+      cache-control: 
+      - public, s-maxage=60, max-age=60
+      x-content-type-options: 
+      - nosniff
+      vary: 
+      - Accept
+      etag: 
+      - "\"396f16a31bda7939ce63d9b5891d6e0f\""
+      last-modified: 
+      - Sat, 20 Oct 2012 16:52:35 GMT
+      x-ratelimit-remaining: 
+      - "50"
+      x-ratelimit-limit: 
+      - "60"
+      x-github-media-type: 
+      - github.beta
+    body: 
+      encoding: ASCII-8BIT
+      string: "{\"type\":\"User\",\"email\":\"jp@skateinmars.net\",\"avatar_url\":\"https://secure.gravatar.com/avatar/53d6845ee2656b1ef581523da50834b8?d=https://a248.e.akamai.net/assets.github.com%2Fimages%2Fgravatars%2Fgravatar-user-420.png\",\"bio\":\"Ruby on Rails developper and Web Technician at Pickabee\",\"url\":\"https://api.github.com/users/skateinmars\",\"followers\":4,\"gravatar_id\":\"53d6845ee2656b1ef581523da50834b8\",\"company\":\"Pickabee\",\"public_repos\":8,\"html_url\":\"https://github.com/skateinmars\",\"_links\":{\"self\":{\"href\":\"https://api.github.com/users/skateinmars\"}},\"login\":\"skateinmars\",\"created_at\":\"2008-06-17T08:49:38Z\",\"name\":\"Jean-Philippe Moal\",\"public_gists\":8,\"following\":7,\"id\":14015,\"blog\":\"http://www.skateinmars.net\",\"location\":\"Marseille, France\",\"hireable\":true}"
+    http_version: 
+  recorded_at: Mon, 22 Oct 2012 08:51:34 GMT
 recorded_with: VCR 2.2.5

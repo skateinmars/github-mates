@@ -10,8 +10,8 @@ feature 'Creating repositories', %q{
     VCR.use_cassette('creating_repositories') do
       visit homepage
 
-      fill_in "Repo", :with => 'nonexistent'
       fill_in "User", :with => 'nonexistent'
+      fill_in "Repo", :with => 'nonexistent'
       click_button "Submit"
       
       should_be_on '/repositories'
@@ -23,11 +23,11 @@ feature 'Creating repositories', %q{
     VCR.use_cassette('creating_repositories') do
       visit homepage
 
-      fill_in "Repo", :with => 'rails'
-      fill_in "User", :with => 'rails'
+      fill_in "User", :with => 'skateinmars'
+      fill_in "Repo", :with => 'has_url'
       click_button "Submit"
       
-      should_be_on '/repositories/rails/rails'
+      should_be_on '/repositories/skateinmars/has_url'
     end
   end
 
