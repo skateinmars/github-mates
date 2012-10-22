@@ -23,7 +23,7 @@ function close_infowindows() {
   });
 }
 
-function displayUser(dom_element) {
+function displayUserOnMap(dom_element) {
   var user = {element: $(dom_element), address: $(dom_element).find('.user_location').html()}
   geocoder.geocode({'address': user.address}, function(results, status) {
     if (status == google.maps.GeocoderStatus.OK) {
@@ -61,8 +61,20 @@ $(document).ready(function(){
   if($('#commiters_map').length > 0) {
     initialize_map(document.getElementById("commiters_map"));
 
-    $('.commiter').has('.user_location').each(function(i) {
-      displayUser(this);
+    $('.commiter').each(function(i) {
+      el = $(this);
+
+      if(el.find('.user_location').length > 0) {
+        displayUserOnMap(this);
+      } else {
+        el.find('.user_login').popover({
+          content: el.find('.user_infos').html(),
+          trigger: 'hover',
+          placement: 'bottom',
+          title: el.find('.user_login').html()
+        });
+        el.find('.user_infos').remove();
+      }
     });
   }
   
