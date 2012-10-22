@@ -29,7 +29,6 @@ function displayUser(dom_element) {
     if (status == google.maps.GeocoderStatus.OK) {
       var user_position = results[0].geometry.location;
       var user_login = user.element.find('.user_login').html()
-      var user_gravatar_id = user.element.find('.user_infos img').data('gravatar-id');
 
       if(((map.center.lat() == 0) && ($('.commiter').has('.user_location').first().find('.user_login').html() == user_login)) || user.element.hasClass('main_commiter')) {
         map.setCenter(user_position);
@@ -45,7 +44,6 @@ function displayUser(dom_element) {
         map: map,
         position: user_position,
         title: user_login
-        //icon: "http://www.gravatar.com/avatar/"+user_gravatar_id+"?s=30"
       });
 
       google.maps.event.addListener(marker, 'click', function() {
