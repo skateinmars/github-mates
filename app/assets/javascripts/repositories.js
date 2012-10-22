@@ -58,7 +58,7 @@ function displayUserOnMap(element) {
 }
 
 function popupifyUser(element) {
-  element.find('.user_login').popover({
+  element.popover({
     content: element.find('.user_infos').html(),
     trigger: 'hover',
     placement: 'top',
