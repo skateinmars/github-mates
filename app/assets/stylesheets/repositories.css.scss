@@ -1,5 +1,12 @@
-#commiters_map { width: 640px; height: 480px; }
+h1 { font-size: 42px; text-align: center; }
+
+.new_repository h1 { margin-bottom: 30px; font-size: 55px; }
+.new_repository h1 img { padding-right: 20px; }
+
+#commiters_map { width: 100%; height: 600px; }
 #commiters_map img { max-width: none; }
 
 #commiters_map h3 { margin: 0; }
-#commiters_map h4 {margin: 0;}
+#commiters_map h4 { margin: 0;}
+
+.commiter { float: left; width: 130px; height: 50px; margin-right: 25px; overflow: hidden; }

@@ -61,7 +61,7 @@ function popupifyUser(element) {
   element.find('.user_login').popover({
     content: element.find('.user_infos').html(),
     trigger: 'hover',
-    placement: 'bottom',
+    placement: 'top',
     title: element.find('.user_login').html()
   });
   element.find('.user_infos').remove();

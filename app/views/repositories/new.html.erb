@@ -1,13 +1,31 @@
-<h1>Choose a repository</h1>
+<div class="row new_repository">
+  <h1><%= image_tag 'benevocats.jpg', :alt => "GithubMates" %>Choose a repository</h1>
 
-<%= content_tag(:p, flash[:error], :class=>"alert alert-error") if flash[:error] %>
+  <div class="span8 offset3">
+    <%= content_tag(:p, flash[:error], :class=>"alert alert-error") if flash[:error] %>
 
-<%= form_for @repository do |form| %>
-  <%= form.label :user %>
-  <%= form.text_field(:user, :class => 'input-medium') %>
-  
-  <%= form.label :repo %>
-  <%= form.text_field(:repo, :class => 'input-medium') %>
+    <%= form_for @repository, :html => {:class => 'form-horizontal'} do |form| %>
+      
+      <div class="control-group <%= 'error' unless @repository.errors[:user].empty? %>">
+        <%= form.label :user, :class => 'control-label' %>
+        <div class="controls">
+          <%= form.text_field(:user, :class => 'input-medium') %>
+        </div>
+      </div>
 
-  <%= form.submit "Submit", :class => 'btn' %>
-<% end %>
+      <div class="control-group <%= 'error' unless @repository.errors[:repo].empty? %>">
+        <%= form.label :repo, :class => 'control-label' %>
+        <div class="controls">
+          <%= form.text_field(:repo, :class => 'input-medium') %>
+        </div>
+      </div>
+
+      <div class="control-group">
+        <div class="controls">
+          <%= form.submit "Submit", :class => 'btn' %>
+        </div>
+      </div>
+
+    <% end %>
+  </div>
+</div>

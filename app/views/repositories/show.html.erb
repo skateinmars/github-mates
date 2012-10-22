@@ -3,8 +3,10 @@
 <div id="commiters_map"></div>
 
 <div id="commiters">
-<% @repository.commiters.each do |user| -%>
-  <div class="commiter <%= 'main_commiter' if @repository.commiters.first == user %>">
+  <h2>Lost users</h2>
+
+  <% @repository.commiters.each do |user| -%>
+  <div class="commiter well <%= 'main_commiter' if @repository.commiters.first == user %>">
     <h3 class="user_login"><%= user.login %></h3>
     <div class="user_infos">
       <h4><%= image_tag user.avatar_url, :alt => user.login, :width => 50, :height => 50 %> <%= user.name %></h4>
@@ -24,5 +26,5 @@
       </p>
     </div>
   </div>
-<% end -%>
+  <% end -%>
 </div>
