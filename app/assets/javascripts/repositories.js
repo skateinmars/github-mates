@@ -1,4 +1,4 @@
-function initialize_map(map_element, mapOptions = {}) {
+function initialize_map(map_element, mapOptions) {
   var defaultOptions = {
     panControl: false,
     mapTypeControl: false,

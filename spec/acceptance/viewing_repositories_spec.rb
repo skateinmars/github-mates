@@ -7,12 +7,14 @@ feature 'Viewing repositories', %q{
   And see the repository page
 } do
 
-  scenario 'Viewing a repository' do
+  scenario 'Viewing a repository', :js => true do
     VCR.use_cassette('viewing_repositories') do
       visit '/repositories/rails/acts_as_list'
 
-      page.should have_content("dhh")
-      page.should have_content("David Heinemeier Hansson")
+      page.should have_css('div#commiters_map div.gmnoprint')
+      
+      page.should_not have_content("dhh")
+      page.should_not have_css('#commiters .commiter')
     end
   end
 

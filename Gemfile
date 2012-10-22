@@ -34,6 +34,7 @@ group :test, :development do
   gem 'shoulda-matchers'
   gem 'steak'
   gem 'capybara'
+  gem 'capybara-webkit'
   gem 'vcr'
 end
 
