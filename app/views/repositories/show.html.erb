@@ -3,7 +3,7 @@
 <div id="commiters_map"></div>
 
 <div id="commiters">
-  <h2>Lost users</h2>
+  <h2>Lost commiters</h2>
 
   <% @repository.commiters.each do |user| -%>
   <div class="commiter well <%= 'main_commiter' if @repository.commiters.first == user %>">
