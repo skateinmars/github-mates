@@ -58,11 +58,12 @@ function displayUser(dom_element) {
 $(document).ready(function(){
   window.geocoder = new google.maps.Geocoder();
 
-  initialize_map(
-    document.getElementById("commiters_map")
-  );
+  if($('#commiters_map').length > 0) {
+    initialize_map(document.getElementById("commiters_map"));
 
-  $('.commiter').has('.user_location').each(function(i) {
-    displayUser(this);
-  });
+    $('.commiter').has('.user_location').each(function(i) {
+      displayUser(this);
+    });
+  }
+  
 });
