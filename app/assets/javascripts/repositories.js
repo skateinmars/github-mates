@@ -23,8 +23,8 @@ function close_infowindows() {
   });
 }
 
-function displayUserOnMap(dom_element) {
-  var user = {element: $(dom_element), address: $(dom_element).find('.user_location').html()}
+function displayUserOnMap(element) {
+  var user = {element: element, address: element.find('.user_location').html()}
   geocoder.geocode({'address': user.address}, function(results, status) {
     if (status == google.maps.GeocoderStatus.OK) {
       var user_position = results[0].geometry.location;
@@ -51,8 +51,20 @@ function displayUserOnMap(dom_element) {
       infowindows.push({marker: marker, infowindow: infowindow});
 
       user.element.remove();
+    } else {
+      popupifyUser(user.element);
     }
   });
+}
+
+function popupifyUser(element) {
+  element.find('.user_login').popover({
+    content: element.find('.user_infos').html(),
+    trigger: 'hover',
+    placement: 'bottom',
+    title: element.find('.user_login').html()
+  });
+  element.find('.user_infos').remove();
 }
 
 $(document).ready(function(){
@@ -65,15 +77,9 @@ $(document).ready(function(){
       el = $(this);
 
       if(el.find('.user_location').length > 0) {
-        displayUserOnMap(this);
+        displayUserOnMap(el);
       } else {
-        el.find('.user_login').popover({
-          content: el.find('.user_infos').html(),
-          trigger: 'hover',
-          placement: 'bottom',
-          title: el.find('.user_login').html()
-        });
-        el.find('.user_infos').remove();
+        popupifyUser(el);
       }
     });
   }
