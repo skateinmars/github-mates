@@ -4,8 +4,9 @@ class RepositoriesController < ApplicationController
   end
 
   def create
-    @repository = Repository.new(params[:repository])
-    if @repository.valid?
+    @repository = Repository.find_or_create_by_user_and_repo(params[:repository][:user], params[:repository][:repo])
+
+    if @repository.persisted?
       redirect_to repository_path(:user => @repository.user, :repo => @repository.repo)
     else
       flash[:error] = "This repository does not exist"
@@ -14,6 +15,6 @@ class RepositoriesController < ApplicationController
   end
 
   def show
-    @repository = Repository.new(:user => params[:user], :repo => params[:repo])
+    @repository = Repository.find_by_user_and_repo!(params[:user], params[:repo])
   end
 end

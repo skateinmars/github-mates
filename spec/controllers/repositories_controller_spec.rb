@@ -14,7 +14,11 @@ describe RepositoriesController do
 
   describe "POST 'create' succesful" do
     before do
-      Repository.any_instance.should_receive(:valid?).and_return(true)
+      repository_mock = double()
+      repository_mock.should_receive(:persisted?).and_return(true)
+      repository_mock.should_receive(:user).and_return('user')
+      repository_mock.should_receive(:repo).and_return('name')
+      Repository.should_receive(:find_or_create_by_user_and_repo).with('user', 'name').and_return(repository_mock)
 
       post 'create', :repository => {:user => 'user', :repo => 'name'}
     end
@@ -23,7 +27,9 @@ describe RepositoriesController do
   end
   describe "POST 'create' failing" do
     before do
-      Repository.any_instance.should_receive(:valid?).and_return(false)
+      repository_mock = double()
+      repository_mock.should_receive(:persisted?).and_return(false)
+      Repository.should_receive(:find_or_create_by_user_and_repo).with('user', 'name').and_return(repository_mock)
 
       post 'create', :repository => {:user => 'user', :repo => 'name'}
     end
@@ -33,8 +39,12 @@ describe RepositoriesController do
   end
 
   describe "GET 'show'" do
-    before do 
-      get 'show', {:user => 'user', :repo => 'name'}
+    before do
+      VCR.use_cassette('repositories_controller') do
+        Repository.create!(:user => 'skateinmars', :repo => 'has_url')
+
+        get 'show', {:user => 'skateinmars', :repo => 'has_url'}
+      end
     end
 
     it { should respond_with(:success) }

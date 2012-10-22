@@ -1,26 +1,13 @@
 require 'github_api'
 
-class Repository
-  include ActiveModel::Validations
-  include ActiveModel::Conversion
+class Repository < ActiveRecord::Base
+  attr_accessible :user, :repo
 
-  attr_accessor :user, :repo
-  
   validates_presence_of :user, :repo
   validate :exists_on_github
 
-  def initialize(params={})
-    params.each do |attr, value|
-      self.send("#{attr}=", value)
-    end
-  end
-
   def commiters
     GithubApi.repository_commiters_details(user, repo)
-  end
-
-  def persisted?
-    false
   end
 
   def to_s
