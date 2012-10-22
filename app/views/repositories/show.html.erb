@@ -1,11 +1,13 @@
 <h1>Viewing <%= @repository.to_s %> commiters</h1>
 
+<div id="commiters_map"></div>
+
 <div id="commiters">
 <% @repository.commiters.each do |user| -%>
-  <div class="commiter">
+  <div class="commiter <%= 'main_commiter' if @repository.commiters.first == user %>">
     <h3 class="user_login"><%= user.login %></h3>
     <div class="user_infos">
-      <h4><%= image_tag user.avatar_url, :alt => user.login, :width => 50, :height => 50 %> <%= user.name %></h4>
+      <h4><%= image_tag user.avatar_url, :alt => user.login, :width => 50, :height => 50, :data => {:gravatar_id => user.gravatar_id} %> <%= user.name %></h4>
       <p>
         <% if user.location.present? %>
           <span class="user_location"><%= user.location %></span><br/>
