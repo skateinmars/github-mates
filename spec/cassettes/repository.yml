@@ -270,4 +270,50 @@ http_interactions:
       string: "{\"type\":\"User\",\"company\":\"37signals\",\"created_at\":\"2008-03-10T17:53:51Z\",\"bio\":null,\"url\":\"https://api.github.com/users/dhh\",\"blog\":\"http://www.loudthinking.com\",\"email\":\"david@loudthinking.com\",\"avatar_url\":\"https://secure.gravatar.com/avatar/ed9635566b34ade32274f510f0f9a6d2?d=https://a248.e.akamai.net/assets.github.com%2Fimages%2Fgravatars%2Fgravatar-user-420.png\",\"_links\":{\"self\":{\"href\":\"https://api.github.com/users/dhh\"}},\"public_gists\":26,\"following\":0,\"location\":\"Chicago, USA\",\"name\":\"David Heinemeier Hansson\",\"public_repos\":13,\"html_url\":\"https://github.com/dhh\",\"id\":2741,\"followers\":3441,\"hireable\":false,\"gravatar_id\":\"ed9635566b34ade32274f510f0f9a6d2\",\"login\":\"dhh\"}"
     http_version: 
   recorded_at: Sat, 20 Oct 2012 18:04:20 GMT
+- request: 
+    method: get
+    uri: https://api.github.com/repos/rails/acts_as_tree
+    body: 
+      encoding: US-ASCII
+      string: ""
+    headers: {}
+
+  response: 
+    status: 
+      code: 200
+      message: 
+    headers: 
+      server: 
+      - nginx
+      date: 
+      - Mon, 22 Oct 2012 17:26:25 GMT
+      content-type: 
+      - application/json; charset=utf-8
+      transfer-encoding: 
+      - chunked
+      connection: 
+      - close
+      status: 
+      - 200 OK
+      x-content-type-options: 
+      - nosniff
+      last-modified: 
+      - Sun, 21 Oct 2012 14:27:44 GMT
+      etag: 
+      - "\"bd9799354ff425282c4d48d0a3908164\""
+      vary: 
+      - Accept
+      cache-control: 
+      - public, s-maxage=60, max-age=60
+      x-ratelimit-limit: 
+      - "60"
+      x-ratelimit-remaining: 
+      - "40"
+      x-github-media-type: 
+      - github.beta
+    body: 
+      encoding: ASCII-8BIT
+      string: "{\"open_issues\":4,\"watchers\":273,\"ssh_url\":\"git@github.com:rails/acts_as_tree.git\",\"created_at\":\"2008-05-29T20:25:07Z\",\"git_url\":\"git://github.com/rails/acts_as_tree.git\",\"url\":\"https://api.github.com/repos/rails/acts_as_tree\",\"owner\":{\"url\":\"https://api.github.com/users/rails\",\"_links\":{\"self\":{\"href\":\"https://api.github.com/users/rails\"}},\"avatar_url\":\"https://secure.gravatar.com/avatar/30f39a09e233e8369dddf6feb4be0308?d=https://a248.e.akamai.net/assets.github.com%2Fimages%2Fgravatars%2Fgravatar-org-420.png\",\"id\":4223,\"gravatar_id\":\"30f39a09e233e8369dddf6feb4be0308\",\"login\":\"rails\"},\"forks_count\":87,\"description\":\"NOTICE: official repository moved to https://github.com/amerine/acts_as_tree\",\"pushed_at\":\"2008-05-29T20:25:50Z\",\"svn_url\":\"https://github.com/rails/acts_as_tree\",\"watchers_count\":273,\"_links\":{\"self\":{\"href\":\"https://api.github.com/repos/rails/acts_as_tree\"}},\"network_count\":87,\"forks\":87,\"has_downloads\":true,\"organization\":{\"url\":\"https://api.github.com/users/rails\",\"_links\":{\"self\":{\"href\":\"https://api.github.com/users/rails\"}},\"avatar_url\":\"https://secure.gravatar.com/avatar/30f39a09e233e8369dddf6feb4be0308?d=https://a248.e.akamai.net/assets.github.com%2Fimages%2Fgravatars%2Fgravatar-org-420.png\",\"id\":4223,\"gravatar_id\":\"30f39a09e233e8369dddf6feb4be0308\",\"login\":\"rails\"},\"master_branch\":\"master\",\"open_issues_count\":4,\"html_url\":\"https://github.com/rails/acts_as_tree\",\"updated_at\":\"2012-10-21T14:27:44Z\",\"size\":0,\"has_issues\":true,\"fork\":false,\"language\":\"Ruby\",\"has_wiki\":true,\"full_name\":\"rails/acts_as_tree\",\"name\":\"acts_as_tree\",\"clone_url\":\"https://github.com/rails/acts_as_tree.git\",\"mirror_url\":null,\"private\":false,\"id\":20550,\"homepage\":\"http://rubyonrails.org\"}"
+    http_version: 
+  recorded_at: Mon, 22 Oct 2012 17:26:25 GMT
 recorded_with: VCR 2.2.5

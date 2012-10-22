@@ -7,6 +7,8 @@ describe Repository do
   context "a new repository" do
     it { should validate_presence_of(:user) }
     it { should validate_presence_of(:repo) }
+
+    it { should have_and_belong_to_many(:commiters) }
   end
 
   context "a repository referencing a non existing repo on Github" do
@@ -20,8 +22,12 @@ describe Repository do
 
     it { should be_valid }
 
-    describe ".commiters" do
-      it "should return an array of contributors informations" do
+    context "saved" do
+      before do
+        subject.save!
+      end
+
+      it "should add its commiters" do
         subject.commiters.length.should eql(2)
       end
     end

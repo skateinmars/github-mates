@@ -15,9 +15,8 @@ class GithubApi
       end
     end
 
-    def repository_commiters_details(username, repository)
-      commiters = github_client.contributors(:username => username, :repo => repository)
-      commiters.map {|user| self.user(user.login) }
+    def repository_commiters(username, repository)
+      github_client.contributors(:username => username, :repo => repository)
     end
 
     def user(username)

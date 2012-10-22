@@ -1,0 +1,95 @@
+--- 
+http_interactions: 
+- request: 
+    method: get
+    uri: https://api.github.com/users/skateinmars
+    body: 
+      encoding: US-ASCII
+      string: ""
+    headers: {}
+
+  response: 
+    status: 
+      code: 200
+      message: 
+    headers: 
+      server: 
+      - nginx
+      date: 
+      - Mon, 22 Oct 2012 17:26:25 GMT
+      content-type: 
+      - application/json; charset=utf-8
+      transfer-encoding: 
+      - chunked
+      connection: 
+      - close
+      status: 
+      - 200 OK
+      x-content-type-options: 
+      - nosniff
+      last-modified: 
+      - Sat, 20 Oct 2012 16:52:35 GMT
+      etag: 
+      - "\"396f16a31bda7939ce63d9b5891d6e0f\""
+      vary: 
+      - Accept
+      cache-control: 
+      - public, s-maxage=60, max-age=60
+      x-ratelimit-limit: 
+      - "60"
+      x-ratelimit-remaining: 
+      - "39"
+      x-github-media-type: 
+      - github.beta
+    body: 
+      encoding: ASCII-8BIT
+      string: "{\"type\":\"User\",\"company\":\"Pickabee\",\"created_at\":\"2008-06-17T08:49:38Z\",\"url\":\"https://api.github.com/users/skateinmars\",\"_links\":{\"self\":{\"href\":\"https://api.github.com/users/skateinmars\"}},\"public_repos\":8,\"public_gists\":8,\"email\":\"jp@skateinmars.net\",\"html_url\":\"https://github.com/skateinmars\",\"following\":7,\"location\":\"Marseille, France\",\"hireable\":true,\"name\":\"Jean-Philippe Moal\",\"avatar_url\":\"https://secure.gravatar.com/avatar/53d6845ee2656b1ef581523da50834b8?d=https://a248.e.akamai.net/assets.github.com%2Fimages%2Fgravatars%2Fgravatar-user-420.png\",\"blog\":\"http://www.skateinmars.net\",\"bio\":\"Ruby on Rails developper and Web Technician at Pickabee\",\"id\":14015,\"followers\":4,\"gravatar_id\":\"53d6845ee2656b1ef581523da50834b8\",\"login\":\"skateinmars\"}"
+    http_version: 
+  recorded_at: Mon, 22 Oct 2012 17:26:25 GMT
+- request: 
+    method: get
+    uri: https://api.github.com/users/skateinmars
+    body: 
+      encoding: US-ASCII
+      string: ""
+    headers: {}
+
+  response: 
+    status: 
+      code: 200
+      message: 
+    headers: 
+      server: 
+      - nginx
+      date: 
+      - Mon, 22 Oct 2012 17:26:26 GMT
+      content-type: 
+      - application/json; charset=utf-8
+      transfer-encoding: 
+      - chunked
+      connection: 
+      - close
+      status: 
+      - 200 OK
+      last-modified: 
+      - Sat, 20 Oct 2012 16:52:35 GMT
+      cache-control: 
+      - public, s-maxage=60, max-age=60
+      x-ratelimit-remaining: 
+      - "38"
+      x-content-type-options: 
+      - nosniff
+      x-github-media-type: 
+      - github.beta
+      etag: 
+      - "\"396f16a31bda7939ce63d9b5891d6e0f\""
+      x-ratelimit-limit: 
+      - "60"
+      vary: 
+      - Accept
+    body: 
+      encoding: ASCII-8BIT
+      string: "{\"type\":\"User\",\"company\":\"Pickabee\",\"created_at\":\"2008-06-17T08:49:38Z\",\"url\":\"https://api.github.com/users/skateinmars\",\"public_repos\":8,\"hireable\":true,\"public_gists\":8,\"blog\":\"http://www.skateinmars.net\",\"email\":\"jp@skateinmars.net\",\"bio\":\"Ruby on Rails developper and Web Technician at Pickabee\",\"following\":7,\"location\":\"Marseille, France\",\"html_url\":\"https://github.com/skateinmars\",\"name\":\"Jean-Philippe Moal\",\"_links\":{\"self\":{\"href\":\"https://api.github.com/users/skateinmars\"}},\"id\":14015,\"followers\":4,\"gravatar_id\":\"53d6845ee2656b1ef581523da50834b8\",\"avatar_url\":\"https://secure.gravatar.com/avatar/53d6845ee2656b1ef581523da50834b8?d=https://a248.e.akamai.net/assets.github.com%2Fimages%2Fgravatars%2Fgravatar-user-420.png\",\"login\":\"skateinmars\"}"
+    http_version: 
+  recorded_at: Mon, 22 Oct 2012 17:26:26 GMT
+recorded_with: VCR 2.2.5
