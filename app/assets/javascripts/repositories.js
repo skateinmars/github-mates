@@ -19,7 +19,7 @@ function initialize_map(map_element, mapOptions) {
 
 function close_infowindows() {
   $.each(infowindows, function(i, infowindow) {
-    infowindow.close();
+    infowindow.infowindow.close();
   });
 }
 
@@ -38,8 +38,6 @@ function displayUser(dom_element) {
         content: user.element.html(),
         maxWidth: 500
       });
-      infowindows.push(infowindow);
-
       var marker = new google.maps.Marker({
         map: map,
         position: user_position,
@@ -50,6 +48,7 @@ function displayUser(dom_element) {
         close_infowindows();
         infowindow.open(map,marker);
       });
+      infowindows.push({marker: marker, infowindow: infowindow});
 
       user.element.remove();
     }

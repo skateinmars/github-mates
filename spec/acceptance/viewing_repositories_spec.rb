@@ -15,6 +15,9 @@ feature 'Viewing repositories', %q{
       
       page.should_not have_content("dhh")
       page.should_not have_css('#commiters .commiter')
+
+      page.execute_script("google.maps.event.trigger(infowindows[3].marker, 'click');")
+      page.should have_content("David Heinemeier Hansson")
     end
   end
 
