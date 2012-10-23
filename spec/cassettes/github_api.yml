@@ -390,4 +390,754 @@ http_interactions:
       string: "{\"message\":\"Not Found\"}"
     http_version: 
   recorded_at: Sat, 20 Oct 2012 17:55:32 GMT
+- request: 
+    method: get
+    uri: https://api.github.com/repos/rails/rails
+    body: 
+      encoding: US-ASCII
+      string: ""
+    headers: {}
+
+  response: 
+    status: 
+      code: 200
+      message: 
+    headers: 
+      server: 
+      - nginx
+      date: 
+      - Tue, 23 Oct 2012 09:05:57 GMT
+      content-type: 
+      - application/json; charset=utf-8
+      transfer-encoding: 
+      - chunked
+      connection: 
+      - close
+      status: 
+      - 200 OK
+      x-ratelimit-limit: 
+      - "5000"
+      x-ratelimit-remaining: 
+      - "3366"
+      x-content-type-options: 
+      - nosniff
+      etag: 
+      - "\"3f9faa6d8c2d9958186d97c02a55fa16\""
+      x-github-media-type: 
+      - github.beta
+      cache-control: 
+      - public, s-maxage=60, max-age=60
+      last-modified: 
+      - Tue, 23 Oct 2012 08:46:25 GMT
+      vary: 
+      - Accept
+    body: 
+      encoding: ASCII-8BIT
+      string: "{\"created_at\":\"2008-04-11T02:19:47Z\",\"has_issues\":true,\"description\":\"Ruby on Rails\",\"owner\":{\"gravatar_id\":\"30f39a09e233e8369dddf6feb4be0308\",\"avatar_url\":\"https://secure.gravatar.com/avatar/30f39a09e233e8369dddf6feb4be0308?d=https://a248.e.akamai.net/assets.github.com%2Fimages%2Fgravatars%2Fgravatar-org-420.png\",\"url\":\"https://api.github.com/users/rails\",\"id\":4223,\"login\":\"rails\",\"_links\":{\"self\":{\"href\":\"https://api.github.com/users/rails\"}}},\"open_issues\":397,\"pushed_at\":\"2012-10-22T23:56:05Z\",\"forks_count\":4123,\"forks\":4123,\"ssh_url\":\"git@github.com:rails/rails.git\",\"organization\":{\"gravatar_id\":\"30f39a09e233e8369dddf6feb4be0308\",\"avatar_url\":\"https://secure.gravatar.com/avatar/30f39a09e233e8369dddf6feb4be0308?d=https://a248.e.akamai.net/assets.github.com%2Fimages%2Fgravatars%2Fgravatar-org-420.png\",\"url\":\"https://api.github.com/users/rails\",\"id\":4223,\"login\":\"rails\",\"_links\":{\"self\":{\"href\":\"https://api.github.com/users/rails\"}}},\"network_count\":4123,\"html_url\":\"https://github.com/rails/rails\",\"watchers\":16313,\"updated_at\":\"2012-10-23T08:46:25Z\",\"git_url\":\"git://github.com/rails/rails.git\",\"clone_url\":\"https://github.com/rails/rails.git\",\"has_downloads\":true,\"size\":88580,\"watchers_count\":16313,\"language\":\"Ruby\",\"mirror_url\":null,\"fork\":false,\"full_name\":\"rails/rails\",\"name\":\"rails\",\"svn_url\":\"https://github.com/rails/rails\",\"homepage\":\"http://rubyonrails.org\",\"open_issues_count\":397,\"url\":\"https://api.github.com/repos/rails/rails\",\"private\":false,\"id\":8514,\"master_branch\":\"master\",\"has_wiki\":false,\"_links\":{\"self\":{\"href\":\"https://api.github.com/repos/rails/rails\"}}}"
+    http_version: 
+  recorded_at: Tue, 23 Oct 2012 09:05:57 GMT
+- request: 
+    method: get
+    uri: https://api.github.com/repos/rails/django
+    body: 
+      encoding: US-ASCII
+      string: ""
+    headers: {}
+
+  response: 
+    status: 
+      code: 404
+      message: 
+    headers: 
+      server: 
+      - nginx
+      date: 
+      - Tue, 23 Oct 2012 09:05:57 GMT
+      content-type: 
+      - application/json; charset=utf-8
+      transfer-encoding: 
+      - chunked
+      connection: 
+      - close
+      status: 
+      - 404 Not Found
+      x-content-type-options: 
+      - nosniff
+      cache-control: 
+      - ""
+      x-github-media-type: 
+      - github.beta
+      x-ratelimit-remaining: 
+      - "3365"
+      x-ratelimit-limit: 
+      - "5000"
+    body: 
+      encoding: ASCII-8BIT
+      string: "{\"message\":\"Not Found\"}"
+    http_version: 
+  recorded_at: Tue, 23 Oct 2012 09:05:57 GMT
+- request: 
+    method: get
+    uri: https://api.github.com/repos/rails/rails
+    body: 
+      encoding: US-ASCII
+      string: ""
+    headers: {}
+
+  response: 
+    status: 
+      code: 200
+      message: 
+    headers: 
+      server: 
+      - nginx
+      date: 
+      - Tue, 23 Oct 2012 09:05:58 GMT
+      content-type: 
+      - application/json; charset=utf-8
+      transfer-encoding: 
+      - chunked
+      connection: 
+      - close
+      status: 
+      - 200 OK
+      etag: 
+      - "\"3f9faa6d8c2d9958186d97c02a55fa16\""
+      x-ratelimit-limit: 
+      - "5000"
+      cache-control: 
+      - public, s-maxage=60, max-age=60
+      vary: 
+      - Accept
+      x-ratelimit-remaining: 
+      - "3364"
+      last-modified: 
+      - Tue, 23 Oct 2012 08:46:25 GMT
+      x-github-media-type: 
+      - github.beta
+      x-content-type-options: 
+      - nosniff
+    body: 
+      encoding: ASCII-8BIT
+      string: "{\"created_at\":\"2008-04-11T02:19:47Z\",\"watchers_count\":16313,\"has_downloads\":true,\"description\":\"Ruby on Rails\",\"owner\":{\"gravatar_id\":\"30f39a09e233e8369dddf6feb4be0308\",\"avatar_url\":\"https://secure.gravatar.com/avatar/30f39a09e233e8369dddf6feb4be0308?d=https://a248.e.akamai.net/assets.github.com%2Fimages%2Fgravatars%2Fgravatar-org-420.png\",\"_links\":{\"self\":{\"href\":\"https://api.github.com/users/rails\"}},\"url\":\"https://api.github.com/users/rails\",\"id\":4223,\"login\":\"rails\"},\"pushed_at\":\"2012-10-22T23:56:05Z\",\"open_issues_count\":397,\"forks\":4123,\"ssh_url\":\"git@github.com:rails/rails.git\",\"has_issues\":true,\"mirror_url\":null,\"_links\":{\"self\":{\"href\":\"https://api.github.com/repos/rails/rails\"}},\"organization\":{\"gravatar_id\":\"30f39a09e233e8369dddf6feb4be0308\",\"avatar_url\":\"https://secure.gravatar.com/avatar/30f39a09e233e8369dddf6feb4be0308?d=https://a248.e.akamai.net/assets.github.com%2Fimages%2Fgravatars%2Fgravatar-org-420.png\",\"_links\":{\"self\":{\"href\":\"https://api.github.com/users/rails\"}},\"url\":\"https://api.github.com/users/rails\",\"id\":4223,\"login\":\"rails\"},\"html_url\":\"https://github.com/rails/rails\",\"watchers\":16313,\"updated_at\":\"2012-10-23T08:46:25Z\",\"clone_url\":\"https://github.com/rails/rails.git\",\"svn_url\":\"https://github.com/rails/rails\",\"has_wiki\":false,\"forks_count\":4123,\"size\":88580,\"language\":\"Ruby\",\"fork\":false,\"full_name\":\"rails/rails\",\"network_count\":4123,\"open_issues\":397,\"name\":\"rails\",\"git_url\":\"git://github.com/rails/rails.git\",\"homepage\":\"http://rubyonrails.org\",\"url\":\"https://api.github.com/repos/rails/rails\",\"private\":false,\"id\":8514,\"master_branch\":\"master\"}"
+    http_version: 
+  recorded_at: Tue, 23 Oct 2012 09:05:58 GMT
+- request: 
+    method: get
+    uri: https://api.github.com/repos/rails/django
+    body: 
+      encoding: US-ASCII
+      string: ""
+    headers: {}
+
+  response: 
+    status: 
+      code: 404
+      message: 
+    headers: 
+      server: 
+      - nginx
+      date: 
+      - Tue, 23 Oct 2012 09:05:59 GMT
+      content-type: 
+      - application/json; charset=utf-8
+      transfer-encoding: 
+      - chunked
+      connection: 
+      - close
+      status: 
+      - 404 Not Found
+      x-ratelimit-limit: 
+      - "5000"
+      x-ratelimit-remaining: 
+      - "3363"
+      x-content-type-options: 
+      - nosniff
+      x-github-media-type: 
+      - github.beta
+      cache-control: 
+      - ""
+    body: 
+      encoding: ASCII-8BIT
+      string: "{\"message\":\"Not Found\"}"
+    http_version: 
+  recorded_at: Tue, 23 Oct 2012 09:05:59 GMT
+- request: 
+    method: get
+    uri: https://api.github.com/repos/skateinmars/has_url/issues
+    body: 
+      encoding: US-ASCII
+      string: ""
+    headers: {}
+
+  response: 
+    status: 
+      code: 200
+      message: 
+    headers: 
+      server: 
+      - nginx
+      date: 
+      - Tue, 23 Oct 2012 09:05:59 GMT
+      content-type: 
+      - application/json; charset=utf-8
+      connection: 
+      - close
+      status: 
+      - 200 OK
+      x-github-media-type: 
+      - github.beta
+      etag: 
+      - "\"d751713988987e9331980363e24189ce\""
+      content-length: 
+      - "2"
+      x-ratelimit-limit: 
+      - "5000"
+      x-content-type-options: 
+      - nosniff
+      x-ratelimit-remaining: 
+      - "3362"
+      cache-control: 
+      - max-age=0, private, must-revalidate
+    body: 
+      encoding: US-ASCII
+      string: "[]"
+    http_version: 
+  recorded_at: Tue, 23 Oct 2012 09:05:59 GMT
+- request: 
+    method: get
+    uri: https://api.github.com/repos/iain/translatable_columns/issues
+    body: 
+      encoding: US-ASCII
+      string: ""
+    headers: {}
+
+  response: 
+    status: 
+      code: 200
+      message: 
+    headers: 
+      server: 
+      - nginx
+      date: 
+      - Tue, 23 Oct 2012 09:06:00 GMT
+      content-type: 
+      - application/json; charset=utf-8
+      transfer-encoding: 
+      - chunked
+      connection: 
+      - close
+      status: 
+      - 200 OK
+      last-modified: 
+      - Tue, 16 Oct 2012 02:03:43 GMT
+      x-content-type-options: 
+      - nosniff
+      cache-control: 
+      - public, max-age=60, s-maxage=60
+      vary: 
+      - Accept
+      x-github-media-type: 
+      - github.beta
+      x-ratelimit-remaining: 
+      - "3361"
+      x-ratelimit-limit: 
+      - "5000"
+      etag: 
+      - "\"71e64d05c5761060ef39eb76a37e6d1d\""
+    body: 
+      encoding: ASCII-8BIT
+      string: "[{\"created_at\":\"2011-08-08T14:11:48Z\",\"comments\":3,\"title\":\"Why do you think this solution is outdated?\",\"closed_at\":null,\"assignee\":null,\"number\":2,\"updated_at\":\"2012-03-16T13:36:09Z\",\"milestone\":null,\"state\":\"open\",\"html_url\":\"https://github.com/iain/translatable_columns/issues/2\",\"labels\":[],\"id\":1365419,\"url\":\"https://api.github.com/repos/iain/translatable_columns/issues/2\",\"body\":\"Hello,\\r\\n\\r\\non your blog where you introduce translateable_columns, you also mention that you think this solution is outdated.\\r\\nI am in the process of internationalizing a Rails 3 application where about 50 tables contain translatable columns, and I like your solution a lot, better than Globalize3's solution of creating a second table for each translatable table.\\r\\n\\r\\nWhat alternatives are there to your solution? Does this not work in Rails 3 any more?\\r\\n\\r\\nThanks,\\r\\nJens\",\"pull_request\":{\"patch_url\":null,\"diff_url\":null,\"html_url\":null},\"user\":{\"gravatar_id\":\"0b3da810e976e4328294cf9a41b39639\",\"avatar_url\":\"https://secure.gravatar.com/avatar/0b3da810e976e4328294cf9a41b39639?d=https://a248.e.akamai.net/assets.github.com%2Fimages%2Fgravatars%2Fgravatar-user-420.png\",\"url\":\"https://api.github.com/users/jensb\",\"id\":44540,\"login\":\"jensb\",\"_links\":{\"self\":{\"href\":\"https://api.github.com/users/jensb\"}}}},{\"created_at\":\"2010-10-14T21:59:58Z\",\"comments\":2,\"title\":\"error with validate_translation_of\",\"closed_at\":null,\"assignee\":null,\"number\":1,\"updated_at\":\"2010-10-18T20:02:33Z\",\"milestone\":null,\"state\":\"open\",\"html_url\":\"https://github.com/iain/translatable_columns/issues/1\",\"labels\":[],\"id\":363146,\"url\":\"https://api.github.com/repos/iain/translatable_columns/issues/1\",\"body\":\"When I'm trying to use the above I get an exception: \\r\\n\\r\\n irb(main):005:0> f=Faculty.first\\r\\nNoMethodError: undefined method `validation_method' for #<Class:0xb70b12d0>\\r\\n        from /usr/lib/ruby/gems/1.8/gems/activerecord-3.0.0/lib/active_record/base.rb:1016:in `method_missing_without_paginate'\\r\\n        from /usr/lib/ruby/gems/1.8/gems/will_paginate-2.3.15/lib/will_paginate/finder.rb:170:in `method_missing'\\r\\n        from /home/warden/rails_apps/pirate/vendor/plugins/translatable_columns/lib/translatable_columns.rb:141:in `validates_translation_of'\\r\\n        from /home/warden/rails_apps/pirate/app/models/faculty.rb:5\\r\\n        from /usr/lib/ruby/gems/1.8/gems/activesupport-3.0.0/lib/active_support/dependencies.rb:454:in `load'\\r\\n        from /usr/lib/ruby/gems/1.8/gems/activesupport-3.0.0/lib/active_support/dependencies.rb:454:in `load_file'\\r\\n        from /usr/lib/ruby/gems/1.8/gems/activesupport-3.0.0/lib/active_support/dependencies.rb:591:in `new_constants_in'\\r\\n        from /usr/lib/ruby/gems/1.8/gems/activesupport-3.0.0/lib/active_support/dependencies.rb:453:in `load_file'\\r\\n        from /usr/lib/ruby/gems/1.8/gems/activesupport-3.0.0/lib/active_support/dependencies.rb:340:in `require_or_load'\\r\\n        from /usr/lib/ruby/gems/1.8/gems/activesupport-3.0.0/lib/active_support/dependencies.rb:491:in `load_missing_constant'\\r\\n        from /usr/lib/ruby/gems/1.8/gems/activesupport-3.0.0/lib/active_support/dependencies.rb:183:in `const_missing'\\r\\n        from /usr/lib/ruby/gems/1.8/gems/activesupport-3.0.0/lib/active_support/dependencies.rb:181:in `each'\\r\\n        from /usr/lib/ruby/gems/1.8/gems/activesupport-3.0.0/lib/active_support/dependencies.rb:181:in `const_missing'\\r\\n\\r\\nModel:\\r\\n class Faculty < ActiveRecord::Base\\r\\n    belongs_to :university\\r\\n    \\r\\n    translatable_columns :short, :name\\r\\n    validates_translation_of :short, :name\\r\\n  end\\r\\n\\r\\n\",\"pull_request\":{\"patch_url\":null,\"diff_url\":null,\"html_url\":null},\"user\":{\"gravatar_id\":\"44ba1db1de47071d4d7ed9ab2eefcb5d\",\"avatar_url\":\"https://secure.gravatar.com/avatar/44ba1db1de47071d4d7ed9ab2eefcb5d?d=https://a248.e.akamai.net/assets.github.com%2Fimages%2Fgravatars%2Fgravatar-user-420.png\",\"url\":\"https://api.github.com/users/ghost\",\"id\":10137,\"login\":\"ghost\",\"_links\":{\"self\":{\"href\":\"https://api.github.com/users/ghost\"}}}}]"
+    http_version: 
+  recorded_at: Tue, 23 Oct 2012 09:06:00 GMT
+- request: 
+    method: get
+    uri: https://api.github.com/repos/iain/roundsman/issues
+    body: 
+      encoding: US-ASCII
+      string: ""
+    headers: {}
+
+  response: 
+    status: 
+      code: 200
+      message: 
+    headers: 
+      server: 
+      - nginx
+      date: 
+      - Tue, 23 Oct 2012 09:06:00 GMT
+      content-type: 
+      - application/json; charset=utf-8
+      transfer-encoding: 
+      - chunked
+      connection: 
+      - close
+      status: 
+      - 200 OK
+      x-github-media-type: 
+      - github.beta
+      last-modified: 
+      - Tue, 16 Oct 2012 05:24:32 GMT
+      vary: 
+      - Accept
+      etag: 
+      - "\"a1a821629ba3e505e17989c3c2b65c63\""
+      x-ratelimit-limit: 
+      - "5000"
+      x-content-type-options: 
+      - nosniff
+      x-ratelimit-remaining: 
+      - "3360"
+      cache-control: 
+      - public, s-maxage=60, max-age=60
+    body: 
+      encoding: ASCII-8BIT
+      string: "[{\"created_at\":\"2012-08-20T09:36:47Z\",\"comments\":3,\"pull_request\":{\"diff_url\":null,\"patch_url\":null,\"html_url\":null},\"title\":\"Use Ruby apt package instead of compiling from source\",\"closed_at\":null,\"assignee\":null,\"number\":7,\"html_url\":\"https://github.com/iain/roundsman/issues/7\",\"updated_at\":\"2012-09-01T16:16:31Z\",\"milestone\":null,\"state\":\"open\",\"labels\":[],\"id\":6321470,\"url\":\"https://api.github.com/repos/iain/roundsman/issues/7\",\"body\":\"Why is there are requirement for 1.9.2-p192?\\n\\nThere is a package on aptitude with 1.9.2p0. I've used this and it works. Compiling from source takes forever.\\n\\nFrom http://www.ruby-lang.org/en/downloads/\\n\\n> Debian GNU/Linux uses the apt package manager system. (So does Ubuntu.) You can use it like this:\\n> \\n> $ sudo apt-get install ruby1.9.1\\n> Yes, this will install Ruby 1.9.2. It has a \xE2\x80\x98library compatibility version\xE2\x80\x99 of 1.9.1, hence the name.\",\"user\":{\"gravatar_id\":\"de54fa84f07f7200da5a1eb090ec717a\",\"_links\":{\"self\":{\"href\":\"https://api.github.com/users/vjpr\"}},\"url\":\"https://api.github.com/users/vjpr\",\"id\":281413,\"login\":\"vjpr\",\"avatar_url\":\"https://secure.gravatar.com/avatar/de54fa84f07f7200da5a1eb090ec717a?d=https://a248.e.akamai.net/assets.github.com%2Fimages%2Fgravatars%2Fgravatar-user-420.png\"}},{\"created_at\":\"2012-08-20T08:02:24Z\",\"comments\":2,\"pull_request\":{\"diff_url\":null,\"patch_url\":null,\"html_url\":null},\"title\":\"/Library/Ruby/Gems/1.8/gems/roundsman-0.1.0/lib/roundsman/capistrano.rb:242:in `match': can't convert Symbol into String (TypeError) \",\"closed_at\":null,\"assignee\":null,\"number\":6,\"html_url\":\"https://github.com/iain/roundsman/issues/6\",\"updated_at\":\"2012-08-20T08:06:25Z\",\"milestone\":null,\"state\":\"open\",\"labels\":[],\"id\":6320088,\"url\":\"https://api.github.com/repos/iain/roundsman/issues/6\",\"body\":\"Whenever I try to run `roundsman.run_list` or `roundsman:configuration` I get this message.\",\"user\":{\"gravatar_id\":\"de54fa84f07f7200da5a1eb090ec717a\",\"_links\":{\"self\":{\"href\":\"https://api.github.com/users/vjpr\"}},\"url\":\"https://api.github.com/users/vjpr\",\"id\":281413,\"login\":\"vjpr\",\"avatar_url\":\"https://secure.gravatar.com/avatar/de54fa84f07f7200da5a1eb090ec717a?d=https://a248.e.akamai.net/assets.github.com%2Fimages%2Fgravatars%2Fgravatar-user-420.png\"}},{\"created_at\":\"2012-08-15T19:53:56Z\",\"comments\":1,\"pull_request\":{\"diff_url\":\"https://github.com/iain/roundsman/pull/5.diff\",\"patch_url\":\"https://github.com/iain/roundsman/pull/5.patch\",\"html_url\":\"https://github.com/iain/roundsman/pull/5\"},\"title\":\"Remove @ensured_* variables.\",\"closed_at\":null,\"assignee\":null,\"number\":5,\"html_url\":\"https://github.com/iain/roundsman/issues/5\",\"updated_at\":\"2012-08-16T04:04:41Z\",\"milestone\":null,\"state\":\"open\",\"labels\":[],\"id\":6249288,\"url\":\"https://api.github.com/repos/iain/roundsman/issues/5\",\"body\":\"When running different run lists per role, @ensured_* variables are not refreshed, and for example, roundsman thinks it already created /tmp/roundsman, but that's not the case, since we're contacting a different host now. Since the ensure operations are quick and idempotent, no need to go extra mile just to skip them.\",\"user\":{\"gravatar_id\":\"1e1640f82b3167301a893b6873347de3\",\"_links\":{\"self\":{\"href\":\"https://api.github.com/users/maxim\"}},\"url\":\"https://api.github.com/users/maxim\",\"id\":7758,\"login\":\"maxim\",\"avatar_url\":\"https://secure.gravatar.com/avatar/1e1640f82b3167301a893b6873347de3?d=https://a248.e.akamai.net/assets.github.com%2Fimages%2Fgravatars%2Fgravatar-user-420.png\"}},{\"created_at\":\"2012-08-15T06:41:56Z\",\"comments\":0,\"pull_request\":{\"diff_url\":null,\"patch_url\":null,\"html_url\":null},\"title\":\"No release should not be required\",\"closed_at\":null,\"assignee\":null,\"number\":4,\"html_url\":\"https://github.com/iain/roundsman/issues/4\",\"updated_at\":\"2012-08-15T06:41:56Z\",\"milestone\":null,\"state\":\"open\",\"labels\":[],\"id\":6234731,\"url\":\"https://api.github.com/repos/iain/roundsman/issues/4\",\"body\":\"If a server doesn't need the app deployed on it, it doesn't mean I don't want to run chef on it. How come all tasks in roundsman are tagged with `except: { no_release: true}`? That makes it impossible to bootstrap, say, a redis server, on which you don't want your app deployed.\",\"user\":{\"gravatar_id\":\"1e1640f82b3167301a893b6873347de3\",\"_links\":{\"self\":{\"href\":\"https://api.github.com/users/maxim\"}},\"url\":\"https://api.github.com/users/maxim\",\"id\":7758,\"login\":\"maxim\",\"avatar_url\":\"https://secure.gravatar.com/avatar/1e1640f82b3167301a893b6873347de3?d=https://a248.e.akamai.net/assets.github.com%2Fimages%2Fgravatars%2Fgravatar-user-420.png\"}},{\"created_at\":\"2012-08-15T06:39:05Z\",\"comments\":1,\"pull_request\":{\"diff_url\":null,\"patch_url\":null,\"html_url\":null},\"title\":\"Roles are ignored\",\"closed_at\":null,\"assignee\":null,\"number\":3,\"html_url\":\"https://github.com/iain/roundsman/issues/3\",\"updated_at\":\"2012-08-15T16:00:29Z\",\"milestone\":null,\"state\":\"open\",\"labels\":[],\"id\":6234703,\"url\":\"https://api.github.com/repos/iain/roundsman/issues/3\",\"body\":\"I have a task similar to this:\\n\\n````ruby\\nnamespace :provision do\\n  task :redis, roles: :redis do\\n    roundsman.run_list('recipe[redis::server]')\\n  end\\nend\\n````\\n\\nAnd roles like this\\n\\n````ruby\\nrole :web, 'web01'\\nrole :app, 'app01'\\nrole :db, 'db01', primary: true\\nrole :redis, 'redis01'\\n````\\n\\nWhen I run cap provision:redis, I expect it to run `recipe[redis::server]` only on redis01 host (as per README). Instead, it runs on every host.\\n\\n````\\n  * 01:27:09 == Currently executing `roundsman:chef:chef_solo'\\n ** Now running recipe[redis::server]\\n  * executing \\\"sudo -p 'sudo password: ' chef-solo -c /tmp/roundsman/solo.rb -j /tmp/roundsman/solo.json\\\"\\n    servers: [\\\"web01\\\", \\\"app01\\\", \\\"db01\\\", \\\"redis01\\\"]\\n    [db01] executing command\\n    [web01] executing command\\n    [redis01] executing command\\n    [app01] executing command\\n````\\n\\nI made a sanity check by adding this test task.\\n\\n````ruby\\ntask :foo, roles: :redis do\\n  run \\\"echo foo\\\"\\nend\\n````\\n\\nRunning cap foo only ran this task on redis server, as expected.\",\"user\":{\"gravatar_id\":\"1e1640f82b3167301a893b6873347de3\",\"_links\":{\"self\":{\"href\":\"https://api.github.com/users/maxim\"}},\"url\":\"https://api.github.com/users/maxim\",\"id\":7758,\"login\":\"maxim\",\"avatar_url\":\"https://secure.gravatar.com/avatar/1e1640f82b3167301a893b6873347de3?d=https://a248.e.akamai.net/assets.github.com%2Fimages%2Fgravatars%2Fgravatar-user-420.png\"}}]"
+    http_version: 
+  recorded_at: Tue, 23 Oct 2012 09:06:00 GMT
+- request: 
+    method: get
+    uri: https://api.github.com/users/vjpr
+    body: 
+      encoding: US-ASCII
+      string: ""
+    headers: {}
+
+  response: 
+    status: 
+      code: 200
+      message: 
+    headers: 
+      server: 
+      - nginx
+      date: 
+      - Tue, 23 Oct 2012 09:06:01 GMT
+      content-type: 
+      - application/json; charset=utf-8
+      transfer-encoding: 
+      - chunked
+      connection: 
+      - close
+      status: 
+      - 200 OK
+      etag: 
+      - "\"928927a24f23f89180d1a4c880d12e8a\""
+      x-ratelimit-limit: 
+      - "5000"
+      cache-control: 
+      - public, s-maxage=60, max-age=60
+      vary: 
+      - Accept
+      x-ratelimit-remaining: 
+      - "3359"
+      last-modified: 
+      - Tue, 16 Oct 2012 04:07:38 GMT
+      x-github-media-type: 
+      - github.beta
+      x-content-type-options: 
+      - nosniff
+    body: 
+      encoding: ASCII-8BIT
+      string: "{\"created_at\":\"2010-05-19T14:12:00Z\",\"type\":\"User\",\"gravatar_id\":\"de54fa84f07f7200da5a1eb090ec717a\",\"avatar_url\":\"https://secure.gravatar.com/avatar/de54fa84f07f7200da5a1eb090ec717a?d=https://a248.e.akamai.net/assets.github.com%2Fimages%2Fgravatars%2Fgravatar-user-420.png\",\"public_repos\":36,\"company\":null,\"email\":null,\"_links\":{\"self\":{\"href\":\"https://api.github.com/users/vjpr\"}},\"html_url\":\"https://github.com/vjpr\",\"public_gists\":2,\"following\":12,\"location\":\"Sydney, Australia\",\"name\":\"Vaughan Rouesnel\",\"hireable\":false,\"followers\":3,\"url\":\"https://api.github.com/users/vjpr\",\"id\":281413,\"login\":\"vjpr\",\"blog\":\"http://vaughan.io\",\"bio\":\"Google Software Engineering Intern 2010-11\\r\\n\\r\\nMacquarie Bank Software Engineering Intern 2009-10\\r\\n\"}"
+    http_version: 
+  recorded_at: Tue, 23 Oct 2012 09:06:01 GMT
+- request: 
+    method: get
+    uri: http://maps.googleapis.com/maps/api/geocode/json?address=Sydney%2C+Australia&sensor=false
+    body: 
+      encoding: US-ASCII
+      string: ""
+    headers: {}
+
+  response: 
+    status: 
+      code: 200
+      message: 
+    headers: 
+      content-type: 
+      - application/json; charset=UTF-8
+      date: 
+      - Tue, 23 Oct 2012 09:06:01 GMT
+      expires: 
+      - Wed, 24 Oct 2012 09:06:01 GMT
+      cache-control: 
+      - public, max-age=86400
+      vary: 
+      - Accept-Language
+      server: 
+      - mafe
+      x-xss-protection: 
+      - 1; mode=block
+      x-frame-options: 
+      - SAMEORIGIN
+      connection: 
+      - close
+    body: 
+      encoding: US-ASCII
+      string: |
+        {
+           "results" : [
+              {
+                 "address_components" : [
+                    {
+                       "long_name" : "Sydney",
+                       "short_name" : "Sydney",
+                       "types" : [ "locality", "political" ]
+                    },
+                    {
+                       "long_name" : "New South Wales",
+                       "short_name" : "NSW",
+                       "types" : [ "administrative_area_level_1", "political" ]
+                    },
+                    {
+                       "long_name" : "Australia",
+                       "short_name" : "AU",
+                       "types" : [ "country", "political" ]
+                    }
+                 ],
+                 "formatted_address" : "Sydney NSW, Australia",
+                 "geometry" : {
+                    "bounds" : {
+                       "northeast" : {
+                          "lat" : -33.42459810,
+                          "lng" : 151.34263610
+                       },
+                       "southwest" : {
+                          "lat" : -34.16924890,
+                          "lng" : 150.5022290
+                       }
+                    },
+                    "location" : {
+                       "lat" : -33.86748690,
+                       "lng" : 151.20699020
+                    },
+                    "location_type" : "APPROXIMATE",
+                    "viewport" : {
+                       "northeast" : {
+                          "lat" : -33.42459810,
+                          "lng" : 151.34263610
+                       },
+                       "southwest" : {
+                          "lat" : -34.16924890,
+                          "lng" : 150.5022290
+                       }
+                    }
+                 },
+                 "types" : [ "locality", "political" ]
+              }
+           ],
+           "status" : "OK"
+        }
+
+    http_version: 
+  recorded_at: Tue, 23 Oct 2012 09:06:01 GMT
+- request: 
+    method: get
+    uri: https://api.github.com/users/rails
+    body: 
+      encoding: US-ASCII
+      string: ""
+    headers: {}
+
+  response: 
+    status: 
+      code: 200
+      message: 
+    headers: 
+      server: 
+      - nginx
+      date: 
+      - Tue, 23 Oct 2012 09:06:02 GMT
+      content-type: 
+      - application/json; charset=utf-8
+      transfer-encoding: 
+      - chunked
+      connection: 
+      - close
+      status: 
+      - 200 OK
+      x-content-type-options: 
+      - nosniff
+      cache-control: 
+      - public, max-age=60, s-maxage=60
+      vary: 
+      - Accept
+      x-ratelimit-remaining: 
+      - "3358"
+      last-modified: 
+      - Tue, 16 Oct 2012 01:41:49 GMT
+      etag: 
+      - "\"32b7f7d35c50793c333b18d33714588c\""
+      x-ratelimit-limit: 
+      - "5000"
+      x-github-media-type: 
+      - github.beta
+    body: 
+      encoding: ASCII-8BIT
+      string: "{\"type\":\"Organization\",\"public_gists\":3,\"followers\":1966,\"login\":\"rails\",\"company\":null,\"public_repos\":61,\"created_at\":\"2008-04-02T01:59:25Z\",\"avatar_url\":\"https://secure.gravatar.com/avatar/30f39a09e233e8369dddf6feb4be0308?d=https://a248.e.akamai.net/assets.github.com%2Fimages%2Fgravatars%2Fgravatar-org-420.png\",\"following\":0,\"name\":null,\"blog\":\"http://weblog.rubyonrails.org/\",\"location\":null,\"url\":\"https://api.github.com/orgs/rails\",\"id\":4223,\"html_url\":\"https://github.com/rails\",\"email\":null}"
+    http_version: 
+  recorded_at: Tue, 23 Oct 2012 09:06:02 GMT
+- request: 
+    method: get
+    uri: https://api.github.com/users/thisuserdoesnotexist
+    body: 
+      encoding: US-ASCII
+      string: ""
+    headers: {}
+
+  response: 
+    status: 
+      code: 404
+      message: 
+    headers: 
+      server: 
+      - nginx
+      date: 
+      - Tue, 23 Oct 2012 09:06:02 GMT
+      content-type: 
+      - application/json; charset=utf-8
+      transfer-encoding: 
+      - chunked
+      connection: 
+      - close
+      status: 
+      - 404 Not Found
+      x-content-type-options: 
+      - nosniff
+      cache-control: 
+      - ""
+      x-ratelimit-limit: 
+      - "5000"
+      x-ratelimit-remaining: 
+      - "3357"
+      x-github-media-type: 
+      - github.beta
+    body: 
+      encoding: ASCII-8BIT
+      string: "{\"message\":\"Not Found\"}"
+    http_version: 
+  recorded_at: Tue, 23 Oct 2012 09:06:02 GMT
+- request: 
+    method: get
+    uri: https://api.github.com/repos/skateinmars/has_url/contributors?anon=false
+    body: 
+      encoding: US-ASCII
+      string: ""
+    headers: {}
+
+  response: 
+    status: 
+      code: 200
+      message: 
+    headers: 
+      server: 
+      - nginx
+      date: 
+      - Tue, 23 Oct 2012 09:06:03 GMT
+      content-type: 
+      - application/json; charset=utf-8
+      transfer-encoding: 
+      - chunked
+      connection: 
+      - close
+      status: 
+      - 200 OK
+      x-github-media-type: 
+      - github.beta
+      last-modified: 
+      - Thu, 13 Sep 2012 23:13:23 GMT
+      vary: 
+      - Accept
+      etag: 
+      - "\"a6b92d120f7665c49e0803fdf8a0ffd2\""
+      x-ratelimit-limit: 
+      - "5000"
+      x-content-type-options: 
+      - nosniff
+      x-ratelimit-remaining: 
+      - "3356"
+      cache-control: 
+      - public, s-maxage=60, max-age=60
+    body: 
+      encoding: ASCII-8BIT
+      string: "[{\"contributions\":7,\"gravatar_id\":\"53d6845ee2656b1ef581523da50834b8\",\"_links\":{\"self\":{\"href\":\"https://api.github.com/users/skateinmars\"}},\"url\":\"https://api.github.com/users/skateinmars\",\"id\":14015,\"login\":\"skateinmars\",\"avatar_url\":\"https://secure.gravatar.com/avatar/53d6845ee2656b1ef581523da50834b8?d=https://a248.e.akamai.net/assets.github.com%2Fimages%2Fgravatars%2Fgravatar-user-420.png\"}]"
+    http_version: 
+  recorded_at: Tue, 23 Oct 2012 09:06:03 GMT
+- request: 
+    method: get
+    uri: https://api.github.com/repos/rails/django/contributors?anon=false
+    body: 
+      encoding: US-ASCII
+      string: ""
+    headers: {}
+
+  response: 
+    status: 
+      code: 404
+      message: 
+    headers: 
+      server: 
+      - nginx
+      date: 
+      - Tue, 23 Oct 2012 09:06:04 GMT
+      content-type: 
+      - application/json; charset=utf-8
+      transfer-encoding: 
+      - chunked
+      connection: 
+      - close
+      status: 
+      - 404 Not Found
+      x-github-media-type: 
+      - github.beta
+      x-content-type-options: 
+      - nosniff
+      x-ratelimit-limit: 
+      - "5000"
+      cache-control: 
+      - ""
+      x-ratelimit-remaining: 
+      - "3355"
+    body: 
+      encoding: ASCII-8BIT
+      string: "{\"message\":\"Not Found\"}"
+    http_version: 
+  recorded_at: Tue, 23 Oct 2012 09:06:04 GMT
+- request: 
+    method: get
+    uri: https://api.github.com/users/maxim
+    body: 
+      encoding: US-ASCII
+      string: ""
+    headers: {}
+
+  response: 
+    status: 
+      code: 200
+      message: 
+    headers: 
+      server: 
+      - nginx
+      date: 
+      - Tue, 23 Oct 2012 09:08:19 GMT
+      content-type: 
+      - application/json; charset=utf-8
+      transfer-encoding: 
+      - chunked
+      connection: 
+      - close
+      status: 
+      - 200 OK
+      x-ratelimit-remaining: 
+      - "3352"
+      x-content-type-options: 
+      - nosniff
+      x-ratelimit-limit: 
+      - "5000"
+      vary: 
+      - Accept
+      x-github-media-type: 
+      - github.beta
+      last-modified: 
+      - Tue, 16 Oct 2012 05:24:32 GMT
+      cache-control: 
+      - public, max-age=60, s-maxage=60
+      etag: 
+      - "\"a1a821629ba3e505e17989c3c2b65c63\""
+    body: 
+      encoding: ASCII-8BIT
+      string: "{\"public_gists\":72,\"created_at\":\"2008-04-17T23:18:06Z\",\"type\":\"User\",\"blog\":\"http://mediumexposure.com\",\"_links\":{\"self\":{\"href\":\"https://api.github.com/users/maxim\"}},\"gravatar_id\":\"1e1640f82b3167301a893b6873347de3\",\"company\":\"Bitsonnet Corp.\",\"email\":\"max@bitsonnet.com\",\"avatar_url\":\"https://secure.gravatar.com/avatar/1e1640f82b3167301a893b6873347de3?d=https://a248.e.akamai.net/assets.github.com%2Fimages%2Fgravatars%2Fgravatar-user-420.png\",\"hireable\":true,\"following\":25,\"location\":\"New York City, NY\",\"bio\":\"\",\"html_url\":\"https://github.com/maxim\",\"name\":\"Maxim Chernyak aka hakunin\",\"followers\":30,\"url\":\"https://api.github.com/users/maxim\",\"id\":7758,\"login\":\"maxim\",\"public_repos\":48}"
+    http_version: 
+  recorded_at: Tue, 23 Oct 2012 09:08:19 GMT
+- request: 
+    method: get
+    uri: http://maps.googleapis.com/maps/api/geocode/json?address=New+York+City%2C+NY&sensor=false
+    body: 
+      encoding: US-ASCII
+      string: ""
+    headers: {}
+
+  response: 
+    status: 
+      code: 200
+      message: 
+    headers: 
+      content-type: 
+      - application/json; charset=UTF-8
+      date: 
+      - Tue, 23 Oct 2012 09:08:19 GMT
+      expires: 
+      - Wed, 24 Oct 2012 09:08:19 GMT
+      cache-control: 
+      - public, max-age=86400
+      vary: 
+      - Accept-Language
+      server: 
+      - mafe
+      x-xss-protection: 
+      - 1; mode=block
+      x-frame-options: 
+      - SAMEORIGIN
+      connection: 
+      - close
+    body: 
+      encoding: US-ASCII
+      string: |
+        {
+           "results" : [
+              {
+                 "address_components" : [
+                    {
+                       "long_name" : "New York",
+                       "short_name" : "New York",
+                       "types" : [ "locality", "political" ]
+                    },
+                    {
+                       "long_name" : "New York",
+                       "short_name" : "NY",
+                       "types" : [ "administrative_area_level_1", "political" ]
+                    },
+                    {
+                       "long_name" : "United States",
+                       "short_name" : "US",
+                       "types" : [ "country", "political" ]
+                    }
+                 ],
+                 "formatted_address" : "New York, NY, USA",
+                 "geometry" : {
+                    "bounds" : {
+                       "northeast" : {
+                          "lat" : 40.91524140,
+                          "lng" : -73.70027209999999
+                       },
+                       "southwest" : {
+                          "lat" : 40.4959080,
+                          "lng" : -74.25908790
+                       }
+                    },
+                    "location" : {
+                       "lat" : 40.71435280,
+                       "lng" : -74.00597309999999
+                    },
+                    "location_type" : "APPROXIMATE",
+                    "viewport" : {
+                       "northeast" : {
+                          "lat" : 40.91524140,
+                          "lng" : -73.70027209999999
+                       },
+                       "southwest" : {
+                          "lat" : 40.4959080,
+                          "lng" : -74.25573489999999
+                       }
+                    }
+                 },
+                 "types" : [ "locality", "political" ]
+              }
+           ],
+           "status" : "OK"
+        }
+
+    http_version: 
+  recorded_at: Tue, 23 Oct 2012 09:08:19 GMT
 recorded_with: VCR 2.2.5

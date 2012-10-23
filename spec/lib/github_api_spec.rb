@@ -38,6 +38,26 @@ describe GithubApi do
     end
   end
 
+  describe ".repository_issues_users" do
+    it "returns an empty list when there is no issues" do
+      issues = GithubApi.repository_issues_users('skateinmars', 'has_url')
+      issues.should be_empty
+    end
+
+    it "returns a list of issues and related users when there are issues" do
+      issues = GithubApi.repository_issues_users('iain', 'translatable_columns')
+      issues.should be_a(Array)
+      issues.first[:user].should eql(Commiter.find_by_login('jensb'))
+      issues.last[:issue]['title'].should eql("error with validate_translation_of")
+    end
+
+    it "filters the pull requests from the issues list and deduplicate users" do
+      issues = GithubApi.repository_issues_users('iain', 'roundsman')
+      issues.should be_a(Array)
+      issues.length.should eql(2)
+    end
+  end
+
   describe ".user" do
     it "returns the user attributes" do
       user = GithubApi.user('rails')

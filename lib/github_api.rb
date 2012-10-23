@@ -19,6 +19,12 @@ class GithubApi
       github_client.contributors(:username => username, :repo => repository)
     end
 
+    # TODO filter the PR while querying the API
+    def repository_issues_users(username, repository)
+      issues = github_client.issues(:username => username, :repo => repository).select { |issue| issue.pull_request.html_url.nil? }.uniq_by(&:user)
+      issues.map {|issue| {:issue => issue.to_hash, :user => Commiter.import_from_github(issue.user.login)} }
+    end
+
     def user(username)
       github_client.user(username)
     end
