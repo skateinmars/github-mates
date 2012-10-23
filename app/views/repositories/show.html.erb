@@ -1,20 +1,24 @@
 <h1>Viewing <%= @repository.to_s %> commiters</h1>
 
-<div id="commiters_map"></div>
 
-<div id="bonus_actions">
-  <p>
-    <%= link_to repository_issues_path(@repository.user, @repository.repo, :format => :json), :remote => true, :id => 'repository_issues_action' do %>
-      <%= image_tag "#{request.protocol}#{request.host_with_port}#{asset_path('bug.png')}", :alt => "Bug" %>
-      <span>Show open issues</span>
-    <% end -%>
-  </p>
+<div class="row">
+  <div class="span2">
+    <div id="bonus_actions">
+      <p class="main_commiter_infos"><%= image_tag "http://www.googlemapsmarkers.com/v1/2a2d9a/", :alt => "Google marps marker" %> Main commiter</p>
+      <p>
+        <%= link_to repository_issues_path(@repository.user, @repository.repo, :format => :json), :remote => true, :id => 'repository_issues_action' do %>
+          <%= image_tag "#{request.protocol}#{request.host_with_port}#{asset_path('bug.png')}", :alt => "Bug" %>
+          <span>Show open issues</span>
+        <% end -%>
+      </p>
+    </div>
+  </div>
+  <div class="span10">
+    <div id="commiters_map"></div>
+  </div>
 </div>
 
-<div id="debug"></div>
-
 <div id="commiters">
-  <p class="main_commiter_infos"><%= image_tag "http://www.googlemapsmarkers.com/v1/2a2d9a/", :alt => "Google marps marker" %>: Repository main commiter</p>
   <h2>Lost commiters</h2>
 
   <% @repository.commiters.each do |user| -%>
