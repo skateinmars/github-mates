@@ -92,4 +92,119 @@ http_interactions:
       string: "{\"type\":\"User\",\"company\":\"Pickabee\",\"created_at\":\"2008-06-17T08:49:38Z\",\"url\":\"https://api.github.com/users/skateinmars\",\"public_repos\":8,\"hireable\":true,\"public_gists\":8,\"blog\":\"http://www.skateinmars.net\",\"email\":\"jp@skateinmars.net\",\"bio\":\"Ruby on Rails developper and Web Technician at Pickabee\",\"following\":7,\"location\":\"Marseille, France\",\"html_url\":\"https://github.com/skateinmars\",\"name\":\"Jean-Philippe Moal\",\"_links\":{\"self\":{\"href\":\"https://api.github.com/users/skateinmars\"}},\"id\":14015,\"followers\":4,\"gravatar_id\":\"53d6845ee2656b1ef581523da50834b8\",\"avatar_url\":\"https://secure.gravatar.com/avatar/53d6845ee2656b1ef581523da50834b8?d=https://a248.e.akamai.net/assets.github.com%2Fimages%2Fgravatars%2Fgravatar-user-420.png\",\"login\":\"skateinmars\"}"
     http_version: 
   recorded_at: Mon, 22 Oct 2012 17:26:26 GMT
+- request: 
+    method: get
+    uri: http://maps.googleapis.com/maps/api/geocode/json?address=Marseille%2C+France&sensor=false
+    body: 
+      encoding: US-ASCII
+      string: ""
+    headers: {}
+
+  response: 
+    status: 
+      code: 200
+      message: 
+    headers: 
+      content-type: 
+      - application/json; charset=UTF-8
+      date: 
+      - Tue, 23 Oct 2012 07:50:26 GMT
+      expires: 
+      - Wed, 24 Oct 2012 07:50:26 GMT
+      cache-control: 
+      - public, max-age=86400
+      vary: 
+      - Accept-Language
+      server: 
+      - mafe
+      x-xss-protection: 
+      - 1; mode=block
+      x-frame-options: 
+      - SAMEORIGIN
+      connection: 
+      - close
+    body: 
+      encoding: ASCII-8BIT
+      string: "{\n   \"results\" : [\n      {\n         \"address_components\" : [\n            {\n               \"long_name\" : \"Marseille\",\n               \"short_name\" : \"Marseille\",\n               \"types\" : [ \"locality\", \"political\" ]\n            },\n            {\n               \"long_name\" : \"Bouches-du-Rhone\",\n               \"short_name\" : \"13\",\n               \"types\" : [ \"administrative_area_level_2\", \"political\" ]\n            },\n            {\n               \"long_name\" : \"Provence-Alpes-C\xC3\xB4te d'Azur\",\n               \"short_name\" : \"PACA\",\n               \"types\" : [ \"administrative_area_level_1\", \"political\" ]\n            },\n            {\n               \"long_name\" : \"France\",\n               \"short_name\" : \"FR\",\n               \"types\" : [ \"country\", \"political\" ]\n            }\n         ],\n         \"formatted_address\" : \"Marseille, France\",\n         \"geometry\" : {\n            \"bounds\" : {\n               \"northeast\" : {\n                  \"lat\" : 43.39116010,\n                  \"lng\" : 5.53235190\n               },\n               \"southwest\" : {\n                  \"lat\" : 43.1696210,\n                  \"lng\" : 5.2286410\n               }\n            },\n            \"location\" : {\n               \"lat\" : 43.2964820,\n               \"lng\" : 5.369780\n            },\n            \"location_type\" : \"APPROXIMATE\",\n            \"viewport\" : {\n               \"northeast\" : {\n                  \"lat\" : 43.39116010,\n                  \"lng\" : 5.53235190\n               },\n               \"southwest\" : {\n                  \"lat\" : 43.1696210,\n                  \"lng\" : 5.277926100000001\n               }\n            }\n         },\n         \"types\" : [ \"locality\", \"political\" ]\n      }\n   ],\n   \"status\" : \"OK\"\n\
+        }\n"
+    http_version: 
+  recorded_at: Tue, 23 Oct 2012 07:50:26 GMT
+- request: 
+    method: get
+    uri: http://maps.googleapis.com/maps/api/geocode/json?address=Marseille%2C+France&sensor=false
+    body: 
+      encoding: US-ASCII
+      string: ""
+    headers: {}
+
+  response: 
+    status: 
+      code: 200
+      message: 
+    headers: 
+      content-type: 
+      - application/json; charset=UTF-8
+      date: 
+      - Tue, 23 Oct 2012 07:50:27 GMT
+      expires: 
+      - Wed, 24 Oct 2012 07:50:27 GMT
+      cache-control: 
+      - public, max-age=86400
+      vary: 
+      - Accept-Language
+      server: 
+      - mafe
+      x-xss-protection: 
+      - 1; mode=block
+      x-frame-options: 
+      - SAMEORIGIN
+      connection: 
+      - close
+    body: 
+      encoding: ASCII-8BIT
+      string: "{\n   \"results\" : [\n      {\n         \"address_components\" : [\n            {\n               \"long_name\" : \"Marseille\",\n               \"short_name\" : \"Marseille\",\n               \"types\" : [ \"locality\", \"political\" ]\n            },\n            {\n               \"long_name\" : \"Bouches-du-Rhone\",\n               \"short_name\" : \"13\",\n               \"types\" : [ \"administrative_area_level_2\", \"political\" ]\n            },\n            {\n               \"long_name\" : \"Provence-Alpes-C\xC3\xB4te d'Azur\",\n               \"short_name\" : \"PACA\",\n               \"types\" : [ \"administrative_area_level_1\", \"political\" ]\n            },\n            {\n               \"long_name\" : \"France\",\n               \"short_name\" : \"FR\",\n               \"types\" : [ \"country\", \"political\" ]\n            }\n         ],\n         \"formatted_address\" : \"Marseille, France\",\n         \"geometry\" : {\n            \"bounds\" : {\n               \"northeast\" : {\n                  \"lat\" : 43.39116010,\n                  \"lng\" : 5.53235190\n               },\n               \"southwest\" : {\n                  \"lat\" : 43.1696210,\n                  \"lng\" : 5.2286410\n               }\n            },\n            \"location\" : {\n               \"lat\" : 43.2964820,\n               \"lng\" : 5.369780\n            },\n            \"location_type\" : \"APPROXIMATE\",\n            \"viewport\" : {\n               \"northeast\" : {\n                  \"lat\" : 43.39116010,\n                  \"lng\" : 5.53235190\n               },\n               \"southwest\" : {\n                  \"lat\" : 43.1696210,\n                  \"lng\" : 5.277926100000001\n               }\n            }\n         },\n         \"types\" : [ \"locality\", \"political\" ]\n      }\n   ],\n   \"status\" : \"OK\"\n\
+        }\n"
+    http_version: 
+  recorded_at: Tue, 23 Oct 2012 07:50:27 GMT
+- request: 
+    method: get
+    uri: http://maps.googleapis.com/maps/api/geocode/json?address=Rue+inexistente%2C+Ville%2C+France&sensor=false
+    body: 
+      encoding: US-ASCII
+      string: ""
+    headers: {}
+
+  response: 
+    status: 
+      code: 200
+      message: 
+    headers: 
+      content-type: 
+      - application/json; charset=UTF-8
+      date: 
+      - Tue, 23 Oct 2012 07:53:54 GMT
+      expires: 
+      - Wed, 24 Oct 2012 07:53:54 GMT
+      cache-control: 
+      - public, max-age=86400
+      vary: 
+      - Accept-Language
+      server: 
+      - mafe
+      x-xss-protection: 
+      - 1; mode=block
+      x-frame-options: 
+      - SAMEORIGIN
+      connection: 
+      - close
+    body: 
+      encoding: US-ASCII
+      string: |
+        {
+           "results" : [],
+           "status" : "ZERO_RESULTS"
+        }
+
+    http_version: 
+  recorded_at: Tue, 23 Oct 2012 07:53:54 GMT
 recorded_with: VCR 2.2.5

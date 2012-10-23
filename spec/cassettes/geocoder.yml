@@ -1,0 +1,81 @@
+--- 
+http_interactions: 
+- request: 
+    method: get
+    uri: http://maps.googleapis.com/maps/api/geocode/json?address=Champ+de+Mars%2C+Paris%2C+France&sensor=false
+    body: 
+      encoding: US-ASCII
+      string: ""
+    headers: {}
+
+  response: 
+    status: 
+      code: 200
+      message: 
+    headers: 
+      content-type: 
+      - application/json; charset=UTF-8
+      date: 
+      - Tue, 23 Oct 2012 07:37:07 GMT
+      expires: 
+      - Wed, 24 Oct 2012 07:37:07 GMT
+      cache-control: 
+      - public, max-age=86400
+      vary: 
+      - Accept-Language
+      server: 
+      - mafe
+      x-xss-protection: 
+      - 1; mode=block
+      x-frame-options: 
+      - SAMEORIGIN
+      connection: 
+      - close
+    body: 
+      encoding: ASCII-8BIT
+      string: "{\n   \"results\" : [\n      {\n         \"address_components\" : [\n            {\n               \"long_name\" : \"Champ de Mars\",\n               \"short_name\" : \"Champ de Mars\",\n               \"types\" : [ \"establishment\" ]\n            },\n            {\n               \"long_name\" : \"45\",\n               \"short_name\" : \"45\",\n               \"types\" : [ \"street_number\" ]\n            },\n            {\n               \"long_name\" : \"Avenue de la Bourdonnais\",\n               \"short_name\" : \"Avenue de la Bourdonnais\",\n               \"types\" : [ \"route\" ]\n            },\n            {\n               \"long_name\" : \"Paris\",\n               \"short_name\" : \"Paris\",\n               \"types\" : [ \"locality\", \"political\" ]\n            },\n            {\n               \"long_name\" : \"Paris\",\n               \"short_name\" : \"75\",\n               \"types\" : [ \"administrative_area_level_2\", \"political\" ]\n            },\n            {\n               \"long_name\" : \"\xC3\x8Ele-de-France\",\n               \"short_name\" : \"IdF\",\n               \"types\" : [ \"administrative_area_level_1\", \"political\" ]\n            },\n            {\n               \"long_name\" : \"France\",\n               \"short_name\" : \"FR\",\n               \"types\" : [ \"country\", \"political\" ]\n            },\n            {\n               \"long_name\" : \"75007\",\n               \"short_name\" : \"75007\",\n               \"types\" : [ \"postal_code\" ]\n            }\n         ],\n         \"formatted_address\" : \"Champ de Mars, 45 Avenue de la Bourdonnais, 75007 Paris, France\",\n         \"geometry\" : {\n            \"bounds\" : {\n               \"northeast\" : {\n                  \"lat\" : 48.86017920,\n                  \"lng\" : 2.30479850\n               },\n               \"southwest\" : {\n                  \"lat\" : 48.85157150,\n                  \"lng\" : 2.29162020\n               }\n            },\n            \"location\" : {\n               \"lat\" : 48.85569580,\n               \"lng\" : 2.2984640\n            },\n            \"location_type\" : \"APPROXIMATE\",\n            \"viewport\" : {\n               \"northeast\" : {\n                  \"lat\" : 48.86017920,\n                  \"lng\" : 2.30479850\n               },\n               \"southwest\" : {\n                  \"lat\" : 48.85157150,\n                  \"lng\" : 2.29162020\n               }\n            }\n         },\n         \"types\" : [ \"park\", \"establishment\" ]\n      }\n   ],\n   \"status\" : \"OK\"\n\
+        }\n"
+    http_version: 
+  recorded_at: Tue, 23 Oct 2012 07:37:07 GMT
+- request: 
+    method: get
+    uri: http://maps.googleapis.com/maps/api/geocode/json?address=Rue+inexistente%2C+Ville%2C+France&sensor=false
+    body: 
+      encoding: US-ASCII
+      string: ""
+    headers: {}
+
+  response: 
+    status: 
+      code: 200
+      message: 
+    headers: 
+      content-type: 
+      - application/json; charset=UTF-8
+      date: 
+      - Tue, 23 Oct 2012 07:37:07 GMT
+      expires: 
+      - Wed, 24 Oct 2012 07:37:07 GMT
+      cache-control: 
+      - public, max-age=86400
+      vary: 
+      - Accept-Language
+      server: 
+      - mafe
+      x-xss-protection: 
+      - 1; mode=block
+      x-frame-options: 
+      - SAMEORIGIN
+      connection: 
+      - close
+    body: 
+      encoding: US-ASCII
+      string: |
+        {
+           "results" : [],
+           "status" : "ZERO_RESULTS"
+        }
+
+    http_version: 
+  recorded_at: Tue, 23 Oct 2012 07:37:07 GMT
+recorded_with: VCR 2.2.5

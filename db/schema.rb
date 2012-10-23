@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20121022165405) do
+ActiveRecord::Schema.define(:version => 20121023074306) do
 
   create_table "commiters", :force => true do |t|
     t.string   "login",      :null => false
@@ -23,6 +23,8 @@ ActiveRecord::Schema.define(:version => 20121022165405) do
     t.string   "avatar_url"
     t.datetime "created_at", :null => false
     t.datetime "updated_at", :null => false
+    t.float    "lat"
+    t.float    "lng"
   end
 
   create_table "commiters_repositories", :id => false, :force => true do |t|

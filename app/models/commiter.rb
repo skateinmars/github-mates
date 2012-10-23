@@ -1,4 +1,5 @@
 require 'github_api'
+require 'geocoder'
 
 class Commiter < ActiveRecord::Base
   has_and_belongs_to_many :repositories
@@ -6,6 +7,8 @@ class Commiter < ActiveRecord::Base
   attr_accessible :login, :location, :company, :email, :blog, :avatar_url, :name
 
   validates_presence_of :login
+
+  before_create :geocode_location
 
   def self.import_from_github(login)
     commiter = Commiter.where(:login => login).first
@@ -23,5 +26,16 @@ class Commiter < ActiveRecord::Base
     end
 
     return commiter
+  end
+
+  private
+
+  def geocode_location
+    return true unless self.location.present?
+    coordinates = Geocoder.geocode(self.location)
+    if coordinates['lat'] && coordinates['lng']
+      self.lat = coordinates['lat']
+      self.lng = coordinates['lng']
+    end
   end
 end
