@@ -1,7 +1,7 @@
 github-mates
 ============
 
-Simple app for experiencing the github API
+Simple app for experimenting with the github API
 
 
 LICENSE
