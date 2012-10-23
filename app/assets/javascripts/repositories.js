@@ -24,42 +24,53 @@ function close_infowindows() {
 }
 
 function displayUserOnMap(element) {
-  var user = {element: element, address: element.find('.user_location').html()}
-  geocoder.geocode({'address': user.address}, function(results, status) {
-    if (status == google.maps.GeocoderStatus.OK) {
-      var user_position = results[0].geometry.location;
-      var user_login = user.element.find('.user_login').html()
+  var user = {element: element, address: element.find('.user_location').html()};
+  var userLat = element.find('.user_location').data('lat');
+  var userLng = element.find('.user_location').data('lng');
 
-      if(((map.center.lat() == 0) && ($('.commiter').has('.user_location').first().find('.user_login').html() == user_login)) || user.element.hasClass('main_commiter')) {
-        map.setCenter(user_position);
-        markerOptions = {
-          icon: $('p.main_commiter_infos img').attr('src')
-        };
+  if (userLat && userLng) {
+    latLng = new google.maps.LatLng(userLat, userLng);
+    markerifyUser(user.element, latLng);
+  } else {
+    geocoder.geocode({'address': user.address}, function(results, status) {
+      if (status == google.maps.GeocoderStatus.OK) {
+        markerifyUser(user.element, results[0].geometry.location);
       } else {
-        markerOptions = {}
+        popupifyUser(user.element);
       }
+    });
+  }
+}
 
-      var infowindow = new google.maps.InfoWindow({
-        content: user.element.html(),
-        maxWidth: 500
-      });
-      var marker = new google.maps.Marker($.extend({
-        map: map,
-        position: user_position,
-        title: user_login
-      }, markerOptions));
+function markerifyUser(element, location) {
+  var user_login = element.find('.user_login').html()
 
-      google.maps.event.addListener(marker, 'click', function() {
-        close_infowindows();
-        infowindow.open(map,marker);
-      });
-      infowindows.push({marker: marker, infowindow: infowindow});
+  if(((map.center.lat() == 0) && ($('.commiter').has('.user_location').first().find('.user_login').html() == user_login)) || element.hasClass('main_commiter')) {
+    map.setCenter(location);
+    markerOptions = {
+      icon: $('p.main_commiter_infos img').attr('src')
+    };
+  } else {
+    markerOptions = {}
+  }
 
-      user.element.remove();
-    } else {
-      popupifyUser(user.element);
-    }
+  var infowindow = new google.maps.InfoWindow({
+    content: element.html(),
+    maxWidth: 500
   });
+  var marker = new google.maps.Marker($.extend({
+    map: map,
+    position: location,
+    title: user_login
+  }, markerOptions));
+
+  google.maps.event.addListener(marker, 'click', function() {
+    close_infowindows();
+    infowindow.open(map,marker);
+  });
+  infowindows.push({marker: marker, infowindow: infowindow});
+
+  element.remove();
 }
 
 function popupifyUser(element) {

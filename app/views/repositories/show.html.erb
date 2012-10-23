@@ -13,7 +13,7 @@
       <h4><%= image_tag user.avatar_url, :alt => user.login, :width => 50, :height => 50 %> <%= user.name %></h4>
       <p>
         <% if user.location.present? %>
-          <span class="user_location"><%= user.location %></span><br/>
+          <span class="user_location" data-lat="<%= user.lat %>" data-lng="<%= user.lng %>" ><%= user.location %></span><br/>
         <% end -%>
         <% if user.company.present? %>
           works at <%= user.company %><br/>
