@@ -1,4 +1,6 @@
 class RepositoriesController < ApplicationController
+  before_filter :get_repository, :only => [:show, :issues]
+
   def new
     @repository = Repository.new
   end
@@ -15,6 +17,21 @@ class RepositoriesController < ApplicationController
   end
 
   def show
+  end
+
+  def issues
+    @issues = GithubApi.repository_issues_users(@repository.user, @repository.repo).map do |issue|
+      {:issue => issue[:issue], :user => issue[:user].to_json}
+    end
+
+    respond_to do |format|
+      format.json { render :json => @issues }
+    end
+  end
+
+  private
+
+  def get_repository
     @repository = Repository.find_by_user_and_repo!(params[:user], params[:repo])
   end
 end

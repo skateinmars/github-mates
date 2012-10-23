@@ -51,4 +51,21 @@ describe RepositoriesController do
     it { should render_template(:show) }
     it { should render_with_layout(:application) }
   end
+
+  describe "GET 'issues'" do
+    before do
+      VCR.use_cassette('repositories_controller') do
+        Repository.create!(:user => 'iain', :repo => 'roundsman')
+
+        get 'issues', {:user => 'iain', :repo => 'roundsman', :format => :json}
+      end
+    end
+
+    it { should respond_with(:success) }
+
+    it "should render a json object" do
+      issues = JSON.parse(response.body)
+      issues.length.should eql(2)
+    end
+  end
 end

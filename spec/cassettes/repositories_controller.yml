@@ -138,3 +138,674 @@ http_interactions:
       string: "{\"type\":\"User\",\"company\":\"Pickabee\",\"created_at\":\"2008-06-17T08:49:38Z\",\"url\":\"https://api.github.com/users/skateinmars\",\"avatar_url\":\"https://secure.gravatar.com/avatar/53d6845ee2656b1ef581523da50834b8?d=https://a248.e.akamai.net/assets.github.com%2Fimages%2Fgravatars%2Fgravatar-user-420.png\",\"_links\":{\"self\":{\"href\":\"https://api.github.com/users/skateinmars\"}},\"blog\":\"http://www.skateinmars.net\",\"email\":\"jp@skateinmars.net\",\"public_gists\":8,\"following\":7,\"location\":\"Marseille, France\",\"name\":\"Jean-Philippe Moal\",\"hireable\":true,\"public_repos\":8,\"html_url\":\"https://github.com/skateinmars\",\"id\":14015,\"followers\":4,\"bio\":\"Ruby on Rails developper and Web Technician at Pickabee\",\"gravatar_id\":\"53d6845ee2656b1ef581523da50834b8\",\"login\":\"skateinmars\"}"
     http_version: 
   recorded_at: Mon, 22 Oct 2012 15:11:47 GMT
+- request: 
+    method: get
+    uri: https://api.github.com/repos/iain/roundsman
+    body: 
+      encoding: US-ASCII
+      string: ""
+    headers: {}
+
+  response: 
+    status: 
+      code: 200
+      message: 
+    headers: 
+      server: 
+      - nginx
+      date: 
+      - Tue, 23 Oct 2012 10:16:06 GMT
+      content-type: 
+      - application/json; charset=utf-8
+      transfer-encoding: 
+      - chunked
+      connection: 
+      - close
+      status: 
+      - 200 OK
+      x-ratelimit-remaining: 
+      - "38"
+      x-ratelimit-limit: 
+      - "60"
+      last-modified: 
+      - Sun, 21 Oct 2012 18:22:20 GMT
+      vary: 
+      - Accept
+      cache-control: 
+      - public, max-age=60, s-maxage=60
+      etag: 
+      - "\"4ed2b35a003010e39494605ab5e9c47d\""
+      x-github-media-type: 
+      - github.beta
+      x-content-type-options: 
+      - nosniff
+    body: 
+      encoding: ASCII-8BIT
+      string: "{\"created_at\":\"2012-04-16T12:23:49Z\",\"description\":\"\",\"owner\":{\"gravatar_id\":\"42ec9fd08c179b547dcb60d977e29941\",\"_links\":{\"self\":{\"href\":\"https://api.github.com/users/iain\"}},\"url\":\"https://api.github.com/users/iain\",\"id\":12692,\"login\":\"iain\",\"avatar_url\":\"https://secure.gravatar.com/avatar/42ec9fd08c179b547dcb60d977e29941?d=https://a248.e.akamai.net/assets.github.com%2Fimages%2Fgravatars%2Fgravatar-user-420.png\"},\"pushed_at\":\"2012-07-06T20:17:32Z\",\"has_issues\":true,\"forks\":15,\"git_url\":\"git://github.com/iain/roundsman.git\",\"ssh_url\":\"git@github.com:iain/roundsman.git\",\"has_wiki\":true,\"html_url\":\"https://github.com/iain/roundsman\",\"watchers\":141,\"updated_at\":\"2012-10-21T18:22:20Z\",\"clone_url\":\"https://github.com/iain/roundsman.git\",\"svn_url\":\"https://github.com/iain/roundsman\",\"watchers_count\":141,\"mirror_url\":null,\"_links\":{\"self\":{\"href\":\"https://api.github.com/repos/iain/roundsman\"}},\"open_issues\":5,\"size\":136,\"language\":\"Ruby\",\"open_issues_count\":5,\"fork\":false,\"full_name\":\"iain/roundsman\",\"forks_count\":15,\"name\":\"roundsman\",\"homepage\":\"\",\"url\":\"https://api.github.com/repos/iain/roundsman\",\"private\":false,\"id\":4040531,\"master_branch\":\"master\",\"network_count\":15,\"has_downloads\":true}"
+    http_version: 
+  recorded_at: Tue, 23 Oct 2012 10:16:06 GMT
+- request: 
+    method: get
+    uri: https://api.github.com/repos/iain/roundsman/contributors?anon=false
+    body: 
+      encoding: US-ASCII
+      string: ""
+    headers: {}
+
+  response: 
+    status: 
+      code: 200
+      message: 
+    headers: 
+      server: 
+      - nginx
+      date: 
+      - Tue, 23 Oct 2012 10:16:07 GMT
+      content-type: 
+      - application/json; charset=utf-8
+      transfer-encoding: 
+      - chunked
+      connection: 
+      - close
+      status: 
+      - 200 OK
+      x-ratelimit-remaining: 
+      - "37"
+      x-ratelimit-limit: 
+      - "60"
+      last-modified: 
+      - Sun, 21 Oct 2012 18:22:20 GMT
+      vary: 
+      - Accept
+      cache-control: 
+      - public, max-age=60, s-maxage=60
+      etag: 
+      - "\"4ed2b35a003010e39494605ab5e9c47d\""
+      x-github-media-type: 
+      - github.beta
+      x-content-type-options: 
+      - nosniff
+    body: 
+      encoding: ASCII-8BIT
+      string: "[{\"contributions\":17,\"gravatar_id\":\"42ec9fd08c179b547dcb60d977e29941\",\"_links\":{\"self\":{\"href\":\"https://api.github.com/users/iain\"}},\"url\":\"https://api.github.com/users/iain\",\"id\":12692,\"login\":\"iain\",\"avatar_url\":\"https://secure.gravatar.com/avatar/42ec9fd08c179b547dcb60d977e29941?d=https://a248.e.akamai.net/assets.github.com%2Fimages%2Fgravatars%2Fgravatar-user-420.png\"},{\"contributions\":2,\"gravatar_id\":\"bda7008056d4a2175ff046fde7fc0d72\",\"_links\":{\"self\":{\"href\":\"https://api.github.com/users/mikesmullin\"}},\"url\":\"https://api.github.com/users/mikesmullin\",\"id\":106222,\"login\":\"mikesmullin\",\"avatar_url\":\"https://secure.gravatar.com/avatar/bda7008056d4a2175ff046fde7fc0d72?d=https://a248.e.akamai.net/assets.github.com%2Fimages%2Fgravatars%2Fgravatar-user-420.png\"},{\"contributions\":1,\"gravatar_id\":\"932692cadb44bf3720b5e439c6498d6a\",\"_links\":{\"self\":{\"href\":\"https://api.github.com/users/Flamefork\"}},\"url\":\"https://api.github.com/users/Flamefork\",\"id\":20203,\"login\":\"Flamefork\",\"avatar_url\":\"https://secure.gravatar.com/avatar/932692cadb44bf3720b5e439c6498d6a?d=https://a248.e.akamai.net/assets.github.com%2Fimages%2Fgravatars%2Fgravatar-user-420.png\"}]"
+    http_version: 
+  recorded_at: Tue, 23 Oct 2012 10:16:07 GMT
+- request: 
+    method: get
+    uri: https://api.github.com/users/iain
+    body: 
+      encoding: US-ASCII
+      string: ""
+    headers: {}
+
+  response: 
+    status: 
+      code: 200
+      message: 
+    headers: 
+      server: 
+      - nginx
+      date: 
+      - Tue, 23 Oct 2012 10:16:08 GMT
+      content-type: 
+      - application/json; charset=utf-8
+      transfer-encoding: 
+      - chunked
+      connection: 
+      - close
+      status: 
+      - 200 OK
+      x-github-media-type: 
+      - github.beta
+      vary: 
+      - Accept
+      x-ratelimit-remaining: 
+      - "36"
+      x-content-type-options: 
+      - nosniff
+      etag: 
+      - "\"b83bb258242e0aa658184f605515be7c\""
+      last-modified: 
+      - Tue, 16 Oct 2012 01:46:29 GMT
+      cache-control: 
+      - public, s-maxage=60, max-age=60
+      x-ratelimit-limit: 
+      - "60"
+    body: 
+      encoding: ASCII-8BIT
+      string: "{\"created_at\":\"2008-06-05T12:41:53Z\",\"type\":\"User\",\"blog\":\"http://iain.nl/\",\"gravatar_id\":\"42ec9fd08c179b547dcb60d977e29941\",\"company\":\"Karma\",\"email\":\"iain@iain.nl\",\"following\":36,\"hireable\":false,\"location\":\"Netherlands\",\"avatar_url\":\"https://secure.gravatar.com/avatar/42ec9fd08c179b547dcb60d977e29941?d=https://a248.e.akamai.net/assets.github.com%2Fimages%2Fgravatars%2Fgravatar-user-420.png\",\"html_url\":\"https://github.com/iain\",\"bio\":\"* Doing Ruby and Rails since 2005 and professionally since 2007.\\r\\n* Regular practitioner of TDD and pair programming.\\r\\n* Contributed to Rails, RSpec, and various other gems on several occasions.\\r\\n* Maintains a couple of home grown gems.\\r\\n* Experience with the entire stack, from maintaining Linux servers to writing HTML5 canvas applications.\\r\\n* Organizer and presenter at [Rotterdam.rb](http://rotterdam-rb.org).\\r\\n* Experience in doing Agile projects.\\r\\n* Always on the look out for new tools and opportunities.\\r\\n* Loves to hack on open source projects.\\r\\n* Has a fitting last name.\",\"name\":\"Iain Hecker\",\"public_repos\":69,\"followers\":88,\"url\":\"https://api.github.com/users/iain\",\"id\":12692,\"login\":\"iain\",\"public_gists\":57,\"_links\":{\"self\":{\"href\":\"https://api.github.com/users/iain\"}}}"
+    http_version: 
+  recorded_at: Tue, 23 Oct 2012 10:16:08 GMT
+- request: 
+    method: get
+    uri: http://maps.googleapis.com/maps/api/geocode/json?address=Netherlands&sensor=false
+    body: 
+      encoding: US-ASCII
+      string: ""
+    headers: {}
+
+  response: 
+    status: 
+      code: 200
+      message: 
+    headers: 
+      content-type: 
+      - application/json; charset=UTF-8
+      date: 
+      - Tue, 23 Oct 2012 10:16:08 GMT
+      expires: 
+      - Wed, 24 Oct 2012 10:16:08 GMT
+      cache-control: 
+      - public, max-age=86400
+      vary: 
+      - Accept-Language
+      server: 
+      - mafe
+      x-xss-protection: 
+      - 1; mode=block
+      x-frame-options: 
+      - SAMEORIGIN
+      connection: 
+      - close
+    body: 
+      encoding: US-ASCII
+      string: |
+        {
+           "results" : [
+              {
+                 "address_components" : [
+                    {
+                       "long_name" : "The Netherlands",
+                       "short_name" : "NL",
+                       "types" : [ "country", "political" ]
+                    }
+                 ],
+                 "formatted_address" : "The Netherlands",
+                 "geometry" : {
+                    "bounds" : {
+                       "northeast" : {
+                          "lat" : 53.55602130,
+                          "lng" : 7.227510199999999
+                       },
+                       "southwest" : {
+                          "lat" : 50.75038379999999,
+                          "lng" : 3.3579620
+                       }
+                    },
+                    "location" : {
+                       "lat" : 52.1326330,
+                       "lng" : 5.291265999999999
+                    },
+                    "location_type" : "APPROXIMATE",
+                    "viewport" : {
+                       "northeast" : {
+                          "lat" : 53.67560,
+                          "lng" : 7.227140500000001
+                       },
+                       "southwest" : {
+                          "lat" : 50.75038370,
+                          "lng" : 3.33160
+                       }
+                    }
+                 },
+                 "types" : [ "country", "political" ]
+              }
+           ],
+           "status" : "OK"
+        }
+
+    http_version: 
+  recorded_at: Tue, 23 Oct 2012 10:16:08 GMT
+- request: 
+    method: get
+    uri: https://api.github.com/users/mikesmullin
+    body: 
+      encoding: US-ASCII
+      string: ""
+    headers: {}
+
+  response: 
+    status: 
+      code: 200
+      message: 
+    headers: 
+      server: 
+      - nginx
+      date: 
+      - Tue, 23 Oct 2012 10:16:08 GMT
+      content-type: 
+      - application/json; charset=utf-8
+      transfer-encoding: 
+      - chunked
+      connection: 
+      - close
+      status: 
+      - 200 OK
+      x-ratelimit-remaining: 
+      - "35"
+      x-github-media-type: 
+      - github.beta
+      vary: 
+      - Accept
+      last-modified: 
+      - Mon, 22 Oct 2012 20:29:06 GMT
+      cache-control: 
+      - public, s-maxage=60, max-age=60
+      etag: 
+      - "\"1e8c998290e9d5e5949f2339ebde5f8d\""
+      x-ratelimit-limit: 
+      - "60"
+      x-content-type-options: 
+      - nosniff
+    body: 
+      encoding: ASCII-8BIT
+      string: "{\"public_gists\":26,\"created_at\":\"2009-07-18T03:26:41Z\",\"type\":\"User\",\"gravatar_id\":\"bda7008056d4a2175ff046fde7fc0d72\",\"public_repos\":66,\"company\":\"Smullin Design and Development, LLC\",\"email\":\"mike@smullindesign.com\",\"html_url\":\"https://github.com/mikesmullin\",\"hireable\":false,\"following\":1,\"avatar_url\":\"https://secure.gravatar.com/avatar/bda7008056d4a2175ff046fde7fc0d72?d=https://a248.e.akamai.net/assets.github.com%2Fimages%2Fgravatars%2Fgravatar-user-420.png\",\"location\":\"Eagle Mountain, Utah, USA\",\"bio\":null,\"name\":\"Mike Smullin\",\"followers\":12,\"url\":\"https://api.github.com/users/mikesmullin\",\"id\":106222,\"login\":\"mikesmullin\",\"blog\":\"http://www.mikesmullin.com/\",\"_links\":{\"self\":{\"href\":\"https://api.github.com/users/mikesmullin\"}}}"
+    http_version: 
+  recorded_at: Tue, 23 Oct 2012 10:16:08 GMT
+- request: 
+    method: get
+    uri: http://maps.googleapis.com/maps/api/geocode/json?address=Eagle+Mountain%2C+Utah%2C+USA&sensor=false
+    body: 
+      encoding: US-ASCII
+      string: ""
+    headers: {}
+
+  response: 
+    status: 
+      code: 200
+      message: 
+    headers: 
+      content-type: 
+      - application/json; charset=UTF-8
+      date: 
+      - Tue, 23 Oct 2012 10:16:09 GMT
+      expires: 
+      - Wed, 24 Oct 2012 10:16:09 GMT
+      cache-control: 
+      - public, max-age=86400
+      vary: 
+      - Accept-Language
+      server: 
+      - mafe
+      x-xss-protection: 
+      - 1; mode=block
+      x-frame-options: 
+      - SAMEORIGIN
+      connection: 
+      - close
+    body: 
+      encoding: US-ASCII
+      string: |
+        {
+           "results" : [
+              {
+                 "address_components" : [
+                    {
+                       "long_name" : "Eagle Mountain",
+                       "short_name" : "Eagle Mountain",
+                       "types" : [ "locality", "political" ]
+                    },
+                    {
+                       "long_name" : "Utah",
+                       "short_name" : "Utah",
+                       "types" : [ "administrative_area_level_2", "political" ]
+                    },
+                    {
+                       "long_name" : "Utah",
+                       "short_name" : "UT",
+                       "types" : [ "administrative_area_level_1", "political" ]
+                    },
+                    {
+                       "long_name" : "United States",
+                       "short_name" : "US",
+                       "types" : [ "country", "political" ]
+                    }
+                 ],
+                 "formatted_address" : "Eagle Mountain, UT, USA",
+                 "geometry" : {
+                    "bounds" : {
+                       "northeast" : {
+                          "lat" : 40.3954850,
+                          "lng" : -111.9444820
+                       },
+                       "southwest" : {
+                          "lat" : 40.2322510,
+                          "lng" : -112.0630390
+                       }
+                    },
+                    "location" : {
+                       "lat" : 40.31411689999999,
+                       "lng" : -112.0068820
+                    },
+                    "location_type" : "APPROXIMATE",
+                    "viewport" : {
+                       "northeast" : {
+                          "lat" : 40.3954850,
+                          "lng" : -111.9444820
+                       },
+                       "southwest" : {
+                          "lat" : 40.2322510,
+                          "lng" : -112.0630390
+                       }
+                    }
+                 },
+                 "types" : [ "locality", "political" ]
+              }
+           ],
+           "status" : "OK"
+        }
+
+    http_version: 
+  recorded_at: Tue, 23 Oct 2012 10:16:08 GMT
+- request: 
+    method: get
+    uri: https://api.github.com/users/Flamefork
+    body: 
+      encoding: US-ASCII
+      string: ""
+    headers: {}
+
+  response: 
+    status: 
+      code: 200
+      message: 
+    headers: 
+      server: 
+      - nginx
+      date: 
+      - Tue, 23 Oct 2012 10:16:09 GMT
+      content-type: 
+      - application/json; charset=utf-8
+      transfer-encoding: 
+      - chunked
+      connection: 
+      - close
+      status: 
+      - 200 OK
+      x-content-type-options: 
+      - nosniff
+      x-ratelimit-remaining: 
+      - "34"
+      x-ratelimit-limit: 
+      - "60"
+      x-github-media-type: 
+      - github.beta
+      etag: 
+      - "\"6ca7e3c4561218e34502e0abd3205c81\""
+      last-modified: 
+      - Tue, 23 Oct 2012 09:20:36 GMT
+      cache-control: 
+      - public, max-age=60, s-maxage=60
+      vary: 
+      - Accept
+    body: 
+      encoding: ASCII-8BIT
+      string: "{\"type\":\"User\",\"followers\":10,\"hireable\":false,\"blog\":\"http://flamefork.ru/\",\"bio\":\"\",\"avatar_url\":\"https://secure.gravatar.com/avatar/932692cadb44bf3720b5e439c6498d6a?d=https://a248.e.akamai.net/assets.github.com%2Fimages%2Fgravatars%2Fgravatar-user-420.png\",\"_links\":{\"self\":{\"href\":\"https://api.github.com/users/Flamefork\"}},\"gravatar_id\":\"932692cadb44bf3720b5e439c6498d6a\",\"login\":\"Flamefork\",\"company\":\"Cloud Castle\",\"created_at\":\"2008-08-10T21:22:47Z\",\"public_repos\":7,\"public_gists\":7,\"following\":0,\"name\":\"Ilia Ablamonov\",\"location\":\"Samara, Russia\",\"url\":\"https://api.github.com/users/Flamefork\",\"id\":20203,\"html_url\":\"https://github.com/Flamefork\",\"email\":\"ilia@flamefork.ru\"}"
+    http_version: 
+  recorded_at: Tue, 23 Oct 2012 10:16:09 GMT
+- request: 
+    method: get
+    uri: http://maps.googleapis.com/maps/api/geocode/json?address=Samara%2C+Russia&sensor=false
+    body: 
+      encoding: US-ASCII
+      string: ""
+    headers: {}
+
+  response: 
+    status: 
+      code: 200
+      message: 
+    headers: 
+      content-type: 
+      - application/json; charset=UTF-8
+      date: 
+      - Tue, 23 Oct 2012 10:16:09 GMT
+      expires: 
+      - Wed, 24 Oct 2012 10:16:09 GMT
+      cache-control: 
+      - public, max-age=86400
+      vary: 
+      - Accept-Language
+      server: 
+      - mafe
+      x-xss-protection: 
+      - 1; mode=block
+      x-frame-options: 
+      - SAMEORIGIN
+      connection: 
+      - close
+    body: 
+      encoding: US-ASCII
+      string: |
+        {
+           "results" : [
+              {
+                 "address_components" : [
+                    {
+                       "long_name" : "Samara",
+                       "short_name" : "Samara",
+                       "types" : [ "locality", "political" ]
+                    },
+                    {
+                       "long_name" : "Samarskaya oblast",
+                       "short_name" : "Samarskaya oblast",
+                       "types" : [ "administrative_area_level_1", "political" ]
+                    },
+                    {
+                       "long_name" : "Russian Federation",
+                       "short_name" : "RU",
+                       "types" : [ "country", "political" ]
+                    }
+                 ],
+                 "formatted_address" : "Samara, Samara Oblast, Russia",
+                 "geometry" : {
+                    "bounds" : {
+                       "northeast" : {
+                          "lat" : 53.42982720000001,
+                          "lng" : 50.38997790
+                       },
+                       "southwest" : {
+                          "lat" : 53.09167030,
+                          "lng" : 49.98771310
+                       }
+                    },
+                    "location" : {
+                       "lat" : 53.19656450,
+                       "lng" : 50.1033750
+                    },
+                    "location_type" : "APPROXIMATE",
+                    "viewport" : {
+                       "northeast" : {
+                          "lat" : 53.42982720000001,
+                          "lng" : 50.38997790
+                       },
+                       "southwest" : {
+                          "lat" : 53.09167030,
+                          "lng" : 49.98771310
+                       }
+                    }
+                 },
+                 "types" : [ "locality", "political" ]
+              },
+              {
+                 "address_components" : [
+                    {
+                       "long_name" : "Samara",
+                       "short_name" : "Samara",
+                       "types" : [ "locality", "political" ]
+                    },
+                    {
+                       "long_name" : "Mikhaylovsky District",
+                       "short_name" : "Mikhaylovsky District",
+                       "types" : [ "administrative_area_level_2", "political" ]
+                    },
+                    {
+                       "long_name" : "Ryazan Oblast",
+                       "short_name" : "Ryazan Oblast",
+                       "types" : [ "administrative_area_level_1", "political" ]
+                    },
+                    {
+                       "long_name" : "Russian Federation",
+                       "short_name" : "RU",
+                       "types" : [ "country", "political" ]
+                    }
+                 ],
+                 "formatted_address" : "Samara, Ryazan Oblast, Russia",
+                 "geometry" : {
+                    "location" : {
+                       "lat" : 54.0150,
+                       "lng" : 38.83000000000001
+                    },
+                    "location_type" : "APPROXIMATE",
+                    "viewport" : {
+                       "northeast" : {
+                          "lat" : 54.01634898029150,
+                          "lng" : 38.83134898029151
+                       },
+                       "southwest" : {
+                          "lat" : 54.01365101970850,
+                          "lng" : 38.82865101970851
+                       }
+                    }
+                 },
+                 "types" : [ "locality", "political" ]
+              },
+              {
+                 "address_components" : [
+                    {
+                       "long_name" : "Samara",
+                       "short_name" : "Samara",
+                       "types" : [ "locality", "political" ]
+                    },
+                    {
+                       "long_name" : "Oktyabrsky District",
+                       "short_name" : "Oktyabrsky District",
+                       "types" : [ "administrative_area_level_2", "political" ]
+                    },
+                    {
+                       "long_name" : "Jewish Autonomous Oblast",
+                       "short_name" : "Jewish Autonomous Oblast",
+                       "types" : [ "administrative_area_level_1", "political" ]
+                    },
+                    {
+                       "long_name" : "Russian Federation",
+                       "short_name" : "RU",
+                       "types" : [ "country", "political" ]
+                    }
+                 ],
+                 "formatted_address" : "Samara, Jewish Autonomous Oblast, Russia",
+                 "geometry" : {
+                    "location" : {
+                       "lat" : 47.82520,
+                       "lng" : 131.23780
+                    },
+                    "location_type" : "APPROXIMATE",
+                    "viewport" : {
+                       "northeast" : {
+                          "lat" : 47.82654898029150,
+                          "lng" : 131.2391489802915
+                       },
+                       "southwest" : {
+                          "lat" : 47.82385101970850,
+                          "lng" : 131.2364510197085
+                       }
+                    }
+                 },
+                 "types" : [ "locality", "political" ]
+              },
+              {
+                 "address_components" : [
+                    {
+                       "long_name" : "Samara",
+                       "short_name" : "Samara",
+                       "types" : [ "locality", "political" ]
+                    },
+                    {
+                       "long_name" : "Ziminsky District",
+                       "short_name" : "Ziminsky District",
+                       "types" : [ "administrative_area_level_2", "political" ]
+                    },
+                    {
+                       "long_name" : "Irkutskaya oblast",
+                       "short_name" : "Irkutskaya oblast",
+                       "types" : [ "administrative_area_level_1", "political" ]
+                    },
+                    {
+                       "long_name" : "Russian Federation",
+                       "short_name" : "RU",
+                       "types" : [ "country", "political" ]
+                    }
+                 ],
+                 "formatted_address" : "Samara, Irkutsk Oblast, Russia",
+                 "geometry" : {
+                    "location" : {
+                       "lat" : 53.85149999999999,
+                       "lng" : 102.00450
+                    },
+                    "location_type" : "APPROXIMATE",
+                    "viewport" : {
+                       "northeast" : {
+                          "lat" : 53.85284898029149,
+                          "lng" : 102.0058489802915
+                       },
+                       "southwest" : {
+                          "lat" : 53.85015101970849,
+                          "lng" : 102.0031510197085
+                       }
+                    }
+                 },
+                 "types" : [ "locality", "political" ]
+              }
+           ],
+           "status" : "OK"
+        }
+
+    http_version: 
+  recorded_at: Tue, 23 Oct 2012 10:16:09 GMT
+- request: 
+    method: get
+    uri: https://api.github.com/repos/iain/roundsman/issues
+    body: 
+      encoding: US-ASCII
+      string: ""
+    headers: {}
+
+  response: 
+    status: 
+      code: 200
+      message: 
+    headers: 
+      server: 
+      - nginx
+      date: 
+      - Tue, 23 Oct 2012 10:17:02 GMT
+      content-type: 
+      - application/json; charset=utf-8
+      transfer-encoding: 
+      - chunked
+      connection: 
+      - close
+      status: 
+      - 200 OK
+      x-ratelimit-remaining: 
+      - "33"
+      x-github-media-type: 
+      - github.beta
+      vary: 
+      - Accept
+      last-modified: 
+      - Tue, 23 Oct 2012 09:20:36 GMT
+      cache-control: 
+      - public, s-maxage=60, max-age=60
+      etag: 
+      - "\"6ca7e3c4561218e34502e0abd3205c81\""
+      x-ratelimit-limit: 
+      - "60"
+      x-content-type-options: 
+      - nosniff
+    body: 
+      encoding: ASCII-8BIT
+      string: "[{\"created_at\":\"2012-08-20T09:36:47Z\",\"comments\":3,\"title\":\"Use Ruby apt package instead of compiling from source\",\"pull_request\":{\"diff_url\":null,\"html_url\":null,\"patch_url\":null},\"closed_at\":null,\"assignee\":null,\"number\":7,\"html_url\":\"https://github.com/iain/roundsman/issues/7\",\"updated_at\":\"2012-09-01T16:16:31Z\",\"milestone\":null,\"state\":\"open\",\"labels\":[],\"id\":6321470,\"url\":\"https://api.github.com/repos/iain/roundsman/issues/7\",\"body\":\"Why is there are requirement for 1.9.2-p192?\\n\\nThere is a package on aptitude with 1.9.2p0. I've used this and it works. Compiling from source takes forever.\\n\\nFrom http://www.ruby-lang.org/en/downloads/\\n\\n> Debian GNU/Linux uses the apt package manager system. (So does Ubuntu.) You can use it like this:\\n> \\n> $ sudo apt-get install ruby1.9.1\\n> Yes, this will install Ruby 1.9.2. It has a \xE2\x80\x98library compatibility version\xE2\x80\x99 of 1.9.1, hence the name.\",\"user\":{\"gravatar_id\":\"de54fa84f07f7200da5a1eb090ec717a\",\"avatar_url\":\"https://secure.gravatar.com/avatar/de54fa84f07f7200da5a1eb090ec717a?d=https://a248.e.akamai.net/assets.github.com%2Fimages%2Fgravatars%2Fgravatar-user-420.png\",\"url\":\"https://api.github.com/users/vjpr\",\"id\":281413,\"login\":\"vjpr\",\"_links\":{\"self\":{\"href\":\"https://api.github.com/users/vjpr\"}}}},{\"created_at\":\"2012-08-20T08:02:24Z\",\"comments\":2,\"title\":\"/Library/Ruby/Gems/1.8/gems/roundsman-0.1.0/lib/roundsman/capistrano.rb:242:in `match': can't convert Symbol into String (TypeError) \",\"pull_request\":{\"diff_url\":null,\"html_url\":null,\"patch_url\":null},\"closed_at\":null,\"assignee\":null,\"number\":6,\"html_url\":\"https://github.com/iain/roundsman/issues/6\",\"updated_at\":\"2012-08-20T08:06:25Z\",\"milestone\":null,\"state\":\"open\",\"labels\":[],\"id\":6320088,\"url\":\"https://api.github.com/repos/iain/roundsman/issues/6\",\"body\":\"Whenever I try to run `roundsman.run_list` or `roundsman:configuration` I get this message.\",\"user\":{\"gravatar_id\":\"de54fa84f07f7200da5a1eb090ec717a\",\"avatar_url\":\"https://secure.gravatar.com/avatar/de54fa84f07f7200da5a1eb090ec717a?d=https://a248.e.akamai.net/assets.github.com%2Fimages%2Fgravatars%2Fgravatar-user-420.png\",\"url\":\"https://api.github.com/users/vjpr\",\"id\":281413,\"login\":\"vjpr\",\"_links\":{\"self\":{\"href\":\"https://api.github.com/users/vjpr\"}}}},{\"created_at\":\"2012-08-15T19:53:56Z\",\"comments\":1,\"title\":\"Remove @ensured_* variables.\",\"pull_request\":{\"diff_url\":\"https://github.com/iain/roundsman/pull/5.diff\",\"html_url\":\"https://github.com/iain/roundsman/pull/5\",\"patch_url\":\"https://github.com/iain/roundsman/pull/5.patch\"},\"closed_at\":null,\"assignee\":null,\"number\":5,\"html_url\":\"https://github.com/iain/roundsman/issues/5\",\"updated_at\":\"2012-08-16T04:04:41Z\",\"milestone\":null,\"state\":\"open\",\"labels\":[],\"id\":6249288,\"url\":\"https://api.github.com/repos/iain/roundsman/issues/5\",\"body\":\"When running different run lists per role, @ensured_* variables are not refreshed, and for example, roundsman thinks it already created /tmp/roundsman, but that's not the case, since we're contacting a different host now. Since the ensure operations are quick and idempotent, no need to go extra mile just to skip them.\",\"user\":{\"gravatar_id\":\"1e1640f82b3167301a893b6873347de3\",\"avatar_url\":\"https://secure.gravatar.com/avatar/1e1640f82b3167301a893b6873347de3?d=https://a248.e.akamai.net/assets.github.com%2Fimages%2Fgravatars%2Fgravatar-user-420.png\",\"url\":\"https://api.github.com/users/maxim\",\"id\":7758,\"login\":\"maxim\",\"_links\":{\"self\":{\"href\":\"https://api.github.com/users/maxim\"}}}},{\"created_at\":\"2012-08-15T06:41:56Z\",\"comments\":0,\"title\":\"No release should not be required\",\"pull_request\":{\"diff_url\":null,\"html_url\":null,\"patch_url\":null},\"closed_at\":null,\"assignee\":null,\"number\":4,\"html_url\":\"https://github.com/iain/roundsman/issues/4\",\"updated_at\":\"2012-08-15T06:41:56Z\",\"milestone\":null,\"state\":\"open\",\"labels\":[],\"id\":6234731,\"url\":\"https://api.github.com/repos/iain/roundsman/issues/4\",\"body\":\"If a server doesn't need the app deployed on it, it doesn't mean I don't want to run chef on it. How come all tasks in roundsman are tagged with `except: { no_release: true}`? That makes it impossible to bootstrap, say, a redis server, on which you don't want your app deployed.\",\"user\":{\"gravatar_id\":\"1e1640f82b3167301a893b6873347de3\",\"avatar_url\":\"https://secure.gravatar.com/avatar/1e1640f82b3167301a893b6873347de3?d=https://a248.e.akamai.net/assets.github.com%2Fimages%2Fgravatars%2Fgravatar-user-420.png\",\"url\":\"https://api.github.com/users/maxim\",\"id\":7758,\"login\":\"maxim\",\"_links\":{\"self\":{\"href\":\"https://api.github.com/users/maxim\"}}}},{\"created_at\":\"2012-08-15T06:39:05Z\",\"comments\":1,\"title\":\"Roles are ignored\",\"pull_request\":{\"diff_url\":null,\"html_url\":null,\"patch_url\":null},\"closed_at\":null,\"assignee\":null,\"number\":3,\"html_url\":\"https://github.com/iain/roundsman/issues/3\",\"updated_at\":\"2012-08-15T16:00:29Z\",\"milestone\":null,\"state\":\"open\",\"labels\":[],\"id\":6234703,\"url\":\"https://api.github.com/repos/iain/roundsman/issues/3\",\"body\":\"I have a task similar to this:\\n\\n````ruby\\nnamespace :provision do\\n  task :redis, roles: :redis do\\n    roundsman.run_list('recipe[redis::server]')\\n  end\\nend\\n````\\n\\nAnd roles like this\\n\\n````ruby\\nrole :web, 'web01'\\nrole :app, 'app01'\\nrole :db, 'db01', primary: true\\nrole :redis, 'redis01'\\n````\\n\\nWhen I run cap provision:redis, I expect it to run `recipe[redis::server]` only on redis01 host (as per README). Instead, it runs on every host.\\n\\n````\\n  * 01:27:09 == Currently executing `roundsman:chef:chef_solo'\\n ** Now running recipe[redis::server]\\n  * executing \\\"sudo -p 'sudo password: ' chef-solo -c /tmp/roundsman/solo.rb -j /tmp/roundsman/solo.json\\\"\\n    servers: [\\\"web01\\\", \\\"app01\\\", \\\"db01\\\", \\\"redis01\\\"]\\n    [db01] executing command\\n    [web01] executing command\\n    [redis01] executing command\\n    [app01] executing command\\n````\\n\\nI made a sanity check by adding this test task.\\n\\n````ruby\\ntask :foo, roles: :redis do\\n  run \\\"echo foo\\\"\\nend\\n````\\n\\nRunning cap foo only ran this task on redis server, as expected.\",\"user\":{\"gravatar_id\":\"1e1640f82b3167301a893b6873347de3\",\"avatar_url\":\"https://secure.gravatar.com/avatar/1e1640f82b3167301a893b6873347de3?d=https://a248.e.akamai.net/assets.github.com%2Fimages%2Fgravatars%2Fgravatar-user-420.png\",\"url\":\"https://api.github.com/users/maxim\",\"id\":7758,\"login\":\"maxim\",\"_links\":{\"self\":{\"href\":\"https://api.github.com/users/maxim\"}}}}]"
+    http_version: 
+  recorded_at: Tue, 23 Oct 2012 10:17:02 GMT
+recorded_with: VCR 2.2.5
